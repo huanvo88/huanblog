@@ -71,3 +71,7 @@ EXTRA_PATH_METADATA = {
 # Top menus
 DISPLAY_CATEGORIES_ON_MENU = False
 DISPLAY_PAGES_ON_MENU = True
+
+#publishconf.py
+SITEURL = 'https://huanvo88.github.io/huanblog'
+RELATIVE_URLS = True

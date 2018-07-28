@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Huan's Blog</title><link href="https://huanvo88.github.io/huanblog/" rel="alternate"></link><link href="https://huanvo88.github.io/huanblog/feeds/all.atom.xml" rel="self"></link><id>https://huanvo88.github.io/huanblog/</id><updated>2018-07-27T21:10:00-04:00</updated><entry><title>First Post-Part 4</title><link href="https://huanvo88.github.io/huanblog/fourth-post.html" rel="alternate"></link><published>2018-07-27T21:10:00-04:00</published><updated>2018-07-27T21:10:00-04:00</updated><author><name>Huan Vo</name></author><id>tag:huanvo88.github.io,2018-07-27:/huanblog/fourth-post.html</id><summary type="html">&lt;p&gt;This is the fourth post of a series of posts. It will demonstrate tables.&lt;/p&gt;</summary><content type="html">&lt;p&gt;This is a fourth post of a series of posts. It will demonstrate tables. &lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Column Header&lt;/th&gt;
+&lt;th&gt;Column Header&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Row 1&lt;/td&gt;
+&lt;td&gt;Data 1&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Row 2&lt;/td&gt;
+&lt;td&gt;Data 2&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;</content><category term="python"></category><category term="pelican"></category><category term="blog"></category><category term="tables"></category></entry><entry><title>First Post-Part 3</title><link href="https://huanvo88.github.io/huanblog/third-post.html" rel="alternate"></link><published>2018-07-27T20:52:00-04:00</published><updated>2018-07-27T20:53:00-04:00</updated><author><name>Huan Vo</name></author><id>tag:huanvo88.github.io,2018-07-27:/huanblog/third-post.html</id><summary type="html">&lt;p&gt;This is the third post of a series of posts. It will show a jupyter notebook.&lt;/p&gt;</summary><content type="html">&lt;p&gt;This post contains a jupyter notebook.&lt;/p&gt;
+&lt;p&gt;
+&lt;div class="cell border-box-sizing text_cell rendered"&gt;&lt;div class="prompt input_prompt"&gt;
+&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+&lt;h1 id="This-is-a-sample-notebook"&gt;This is a sample notebook&lt;a class="anchor-link" href="#This-is-a-sample-notebook"&gt;&amp;#182;&lt;/a&gt;&lt;/h1&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing text_cell rendered"&gt;&lt;div class="prompt input_prompt"&gt;
+&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+&lt;p&gt;Let's import some modules.&lt;/p&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing code_cell rendered"&gt;
+&lt;div class="input"&gt;
+&lt;div class="prompt input_prompt"&gt;In&amp;nbsp;[1]:&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+    &lt;div class="input_area"&gt;
+&lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;pandas&lt;/span&gt; &lt;span class="k"&gt;as&lt;/span&gt; &lt;span class="nn"&gt;pd&lt;/span&gt;
+&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;numpy&lt;/span&gt; &lt;span class="k"&gt;as&lt;/span&gt; &lt;span class="nn"&gt;np&lt;/span&gt;
+&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;matplotlib.pyplot&lt;/span&gt; &lt;span class="k"&gt;as&lt;/span&gt; &lt;span class="nn"&gt;plt&lt;/span&gt;
+&lt;span class="o"&gt;%&lt;/span&gt;&lt;span class="k"&gt;matplotlib&lt;/span&gt; inline
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing code_cell rendered"&gt;
+&lt;div class="input"&gt;
+&lt;div class="prompt input_prompt"&gt;In&amp;nbsp;[2]:&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+    &lt;div class="input_area"&gt;
+&lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nb"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;Hello World&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="output_wrapper"&gt;
+&lt;div class="output"&gt;
+
+
+&lt;div class="output_area"&gt;
+
+&lt;div class="prompt"&gt;&lt;/div&gt;
+
+
+&lt;div class="output_subarea output_stream output_stdout output_text"&gt;
+&lt;pre&gt;Hello World
+&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+ 
+
+&lt;/p&gt;</content><category term="python"></category><category term="pelican"></category><category term="blog"></category></entry><entry><title>First Post-Part 2</title><link href="https://huanvo88.github.io/huanblog/second-post.html" rel="alternate"></link><published>2018-07-27T20:27:00-04:00</published><updated>2018-07-27T20:27:00-04:00</updated><author><name>Huan Vo</name></author><id>tag:huanvo88.github.io,2018-07-27:/huanblog/second-post.html</id><summary type="html">&lt;p&gt;This is the first post of a series of posts.&lt;/p&gt;</summary><content type="html">&lt;p&gt;This is the first post of a series of demonstration posts. It will show series and an embedded youtube video. &lt;/p&gt;
+&lt;p&gt;&lt;span class="videobox"&gt;
+                &lt;iframe width="640" height="390"
+                    src='https://www.youtube.com/embed/https://www.youtube.com/watch?v=XsTjI75uEUQ'
+                    frameborder='0' webkitAllowFullScreen mozallowfullscreen
+                    allowFullScreen&gt;
+                &lt;/iframe&gt;
+            &lt;/span&gt;&lt;/p&gt;</content><category term="python"></category><category term="pelican"></category><category term="blog"></category></entry><entry><title>First Post-Part 1</title><link href="https://huanvo88.github.io/huanblog/first-post.html" rel="alternate"></link><published>2018-07-27T16:10:00-04:00</published><updated>2018-07-27T18:25:00-04:00</updated><author><name>Huan Vo</name></author><id>tag:huanvo88.github.io,2018-07-27:/huanblog/first-post.html</id><summary type="html">&lt;p&gt;This is the first post of a series of demonstration posts.&lt;/p&gt;</summary><content type="html">&lt;p&gt;This is the first post of a series of demonstration posts.&lt;/p&gt;</content><category term="python"></category><category term="pelican"></category><category term="blog"></category></entry></feed>
