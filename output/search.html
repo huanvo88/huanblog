@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="english" prefix="og: http://ogp.me/ns# fb: https://www.facebook.com/2008/fbml">
 <head>
-    <title>Authors - Huan's Blog</title>
+    <title>Search - Huan's Blog
+</title>
     <!-- Using the latest rendering mode for IE -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="utf-8">
@@ -241,8 +242,7 @@ Huan's Blog            </a>
 <div class="container">
     <div class="row">
         <div class="col-sm-9">
-  <h1>Authors on Huan's Blog</h1>
-        <li><a href="/author/huan-vo.html">Huan Vo</a> (4)</li>
+<div id="tipue_search_content"></div>
         </div>
         <div class="col-sm-3" id="sidebar">
             <aside>
@@ -344,5 +344,17 @@ jQuery(document).ready(function($) {
 });
 });
 </script>
+    <script type="text/javascript" src="/theme/tipuesearch/tipuesearch_set.js"></script>
+    <script type="text/javascript" src="/theme/tipuesearch/tipuesearch.min.js"></script>
+    <script>
+    $(document).ready(function() {
+      $('#tipue_search_input').tipuesearch({
+        'mode' : 'json',
+        'show': 10,
+        'newWindow': false,
+        'contentLocation': 'tipuesearch_content.json'
+      });
+    });
+    </script>
 </body>
 </html>
