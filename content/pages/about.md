@@ -1,3 +1,3 @@
 Title: About
 
-I am a graduate student at UofT and I started this blog to write about data science.
+My name is Huan Vo and I am a Phd student in the math department at UofT. My research area is knot theory, more specifically finite-type invariants and quantum invariants. My advisor is <a href="http://www.math.toronto.edu/drorbn/" target = "_blank">Prof Dror Bar-Natan</a>. Recently I am also interested in data science, which is why I started this blog. The best way to contact me is by email vothanhhuan@gmail.com 

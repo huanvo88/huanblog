@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="english" prefix="og: http://ogp.me/ns# fb: https://www.facebook.com/2008/fbml">
 <head>
-    <title>First Post-Part 1 - Huan's Blog</title>
+    <title>Exploratory Data Analysis - Huan's Blog</title>
     <!-- Using the latest rendering mode for IE -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="utf-8">
@@ -173,42 +173,38 @@ init_mathjax = function() {
 init_mathjax();
 </script>
 
-<link rel="canonical" href="https://huanvo88.github.io/huanblog/first-post.html">
+<link rel="canonical" href="./first-post.html">
 
         <meta name="author" content="Huan Vo" />
-        <meta name="keywords" content="python,pelican,blog" />
-        <meta name="description" content="This is the first post of a series of demonstration posts." />
+        <meta name="keywords" content="python,pandas,matplotlib,EDA" />
+        <meta name="description" content="This is the first post of a series of posts about data science." />
 
         <meta property="og:site_name" content="Huan's Blog" />
         <meta property="og:type" content="article"/>
-        <meta property="og:title" content="First Post-Part 1"/>
-        <meta property="og:url" content="https://huanvo88.github.io/huanblog/first-post.html"/>
-        <meta property="og:description" content="This is the first post of a series of demonstration posts."/>
-        <meta property="article:published_time" content="2018-07-27" />
-            <meta property="article:section" content="example posts" />
+        <meta property="og:title" content="Exploratory Data Analysis"/>
+        <meta property="og:url" content="./first-post.html"/>
+        <meta property="og:description" content="This is the first post of a series of posts about data science."/>
+        <meta property="article:published_time" content="2018-08-27" />
+            <meta property="article:section" content="data science posts" />
             <meta property="article:tag" content="python" />
-            <meta property="article:tag" content="pelican" />
-            <meta property="article:tag" content="blog" />
+            <meta property="article:tag" content="pandas" />
+            <meta property="article:tag" content="matplotlib" />
+            <meta property="article:tag" content="EDA" />
             <meta property="article:author" content="Huan Vo" />
 
 
 
     <!-- Bootstrap -->
-        <link rel="stylesheet" href="https://huanvo88.github.io/huanblog/theme/css/bootstrap.flatly.min.css" type="text/css"/>
-    <link href="https://huanvo88.github.io/huanblog/theme/css/font-awesome.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="./theme/css/bootstrap.flatly.min.css" type="text/css"/>
+    <link href="./theme/css/font-awesome.min.css" rel="stylesheet">
 
-    <link href="https://huanvo88.github.io/huanblog/theme/css/pygments/native.css" rel="stylesheet">
-    <link href="https://huanvo88.github.io/huanblog/theme/tipuesearch/tipuesearch.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://huanvo88.github.io/huanblog/theme/css/style.css" type="text/css"/>
-        <link href="https://huanvo88.github.io/huanblog/static/css/custom.css" rel="stylesheet">
-
-        <link href="https://huanvo88.github.io/huanblog/feeds/all.atom.xml" type="application/atom+xml" rel="alternate"
-              title="Huan's Blog ATOM Feed"/>
+    <link href="./theme/css/pygments/native.css" rel="stylesheet">
+    <link rel="stylesheet" href="./theme/css/style.css" type="text/css"/>
+        <link href="./static/css/custom.css" rel="stylesheet">
 
 
 
-        <link href="https://huanvo88.github.io/huanblog/feeds/example-posts.atom.xml" type="application/atom+xml" rel="alternate"
-              title="Huan's Blog example posts ATOM Feed"/>
+
 
 </head>
 <body>
@@ -222,24 +218,22 @@ init_mathjax();
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a href="https://huanvo88.github.io/huanblog/" class="navbar-brand">
+            <a href="./" class="navbar-brand">
 Huan's Blog            </a>
         </div>
         <div class="collapse navbar-collapse navbar-ex1-collapse">
             <ul class="nav navbar-nav">
-                         <li><a href="https://huanvo88.github.io/huanblog/pages/about.html">
+                         <li><a href="./pages/about.html">
                              About
                           </a></li>
-                         <li><a href="https://huanvo88.github.io/huanblog/pages/roadmap-to-data-science.html">
-                             Roadmap to data science
+                         <li><a href="./pages/math.html">
+                             Math
+                          </a></li>
+                         <li><a href="./pages/teaching.html">
+                             Teaching
                           </a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
-              <li><span>
-                <form class="navbar-search" action="/search.html">
-                  <input type="text" class="search-query" placeholder="Search" name="q" id="tipue_search_input" required>
-                </form></span>
-              </li>
             </ul>
         </div>
         <!-- /.navbar-collapse -->
@@ -257,10 +251,10 @@ Huan's Blog            </a>
         <article>
             <header class="page-header">
                 <h1>
-                    <a href="https://huanvo88.github.io/huanblog/first-post.html"
+                    <a href="./first-post.html"
                        rel="bookmark"
-                       title="Permalink to First Post-Part 1">
-                        First Post-Part 1
+                       title="Permalink to Exploratory Data Analysis">
+                        Exploratory Data Analysis
                     </a>
                 </h1>
             </header>
@@ -270,7 +264,7 @@ Huan's Blog            </a>
 <footer class="post-info">
     <span class="label label-default">Date</span>
     <span class="published">
-        <i class="fa fa-calendar"></i><time datetime="2018-07-27T16:10:00-04:00"> Fri 27 July 2018</time>
+        <i class="fa fa-calendar"></i><time datetime="2018-08-27T17:38:00-04:00"> Mon 27 August 2018</time>
     </span>
 
 
@@ -278,25 +272,4223 @@ Huan's Blog            </a>
 
 
 <span class="label label-default">Tags</span>
-	<a href="https://huanvo88.github.io/huanblog/tag/python.html">python</a>
+	<a href="./tag/python.html">python</a>
         /
-	<a href="https://huanvo88.github.io/huanblog/tag/pelican.html">pelican</a>
+	<a href="./tag/pandas.html">pandas</a>
         /
-	<a href="https://huanvo88.github.io/huanblog/tag/blog.html">blog</a>
+	<a href="./tag/matplotlib.html">matplotlib</a>
+        /
+	<a href="./tag/eda.html">EDA</a>
     
 </footer><!-- /.post-info -->                    </div>
                 </div>
-                <p>This is the first post of a series of demonstration posts.</p>
+                <p>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Exploring-Ebay-Car-Sales-Data">Exploring Ebay Car Sales Data<a class="anchor-link" href="#Exploring-Ebay-Car-Sales-Data">&#182;</a></h1>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>In this project, we'll work with a dataset of used cars from eBay Kleinanzeigen, a <a href="https://en.wikipedia.org/wiki/Classified_advertising">classified</a> section of the German eBay website.</p>
+<p>The dataset was uploaded to <a href="https://www.kaggle.com/orgesleka/used-cars-database/data">Kaggle</a>. We made a few modifications to the data as follows.</p>
+<ul>
+<li>We sampled 50,000 data points from the full dataset, to make sure the code runs quickly.</li>
+<li>We dirtied the dataset a bit so we can practise cleaning the data. </li>
+</ul>
+<p>The data dictionary provided with the dataset is as follows:</p>
+<ul>
+<li><strong>dateCrawled</strong> - When this ad was first crawled. All field-values are taken from this date.</li>
+<li><strong>name</strong> -Name of the car.</li>
+<li><strong>seller</strong> -Whether the seller is private or a dealer.</li>
+<li><strong>offerType</strong> - The type of listing.</li>
+<li><strong>abtest</strong> -Whether the listing is included in an A/B test.</li>
+<li><strong>vehicleType</strong> -The vehicle Type.</li>
+<li><strong>yearOfRegistration</strong> -The year in wich the car was first registered</li>
+<li><strong>gearbox</strong> -The transmission type</li>
+<li><strong>model</strong> -The car model name</li>
+<li><strong>kilometer</strong>- How many kilometers the car has driven</li>
+<li><strong>monthOfRegistration</strong> - The month in which the car was first registered.</li>
+<li><strong>fuelType</strong> -The brand of the car</li>
+<li><strong>notRepairedDamage</strong> -If the car has a damage which is not yet repaired.</li>
+<li><strong>dateCreated</strong> -The date on which the eBay listing was created.</li>
+<li><strong>nrOfPictures</strong> -The number of pictures in the ad</li>
+<li><strong>postalCode</strong> -The postal code for the location of the vehicle.</li>
+<li><strong>lastSeenOnline</strong> -When the crawler saw this ad last online.</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[1]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#import the pandas and numpy libraries</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="o">%</span><span class="k">matplotlib</span> inline
+<span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="nn">sns</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#read in the dataset</span>
+<span class="n">autos</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;autos.csv&quot;</span><span class="p">,</span> <span class="n">encoding</span> <span class="o">=</span> <span class="s2">&quot;Latin-1&quot;</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#print the dataset</span>
+<span class="n">autos</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt output_prompt">Out[3]:</div>
+
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>dateCrawled</th>
+      <th>name</th>
+      <th>seller</th>
+      <th>offerType</th>
+      <th>price</th>
+      <th>abtest</th>
+      <th>vehicleType</th>
+      <th>yearOfRegistration</th>
+      <th>gearbox</th>
+      <th>powerPS</th>
+      <th>model</th>
+      <th>odometer</th>
+      <th>monthOfRegistration</th>
+      <th>fuelType</th>
+      <th>brand</th>
+      <th>notRepairedDamage</th>
+      <th>dateCreated</th>
+      <th>nrOfPictures</th>
+      <th>postalCode</th>
+      <th>lastSeen</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>2016-03-26 17:47:46</td>
+      <td>Peugeot_807_160_NAVTECH_ON_BOARD</td>
+      <td>privat</td>
+      <td>Angebot</td>
+      <td>$5,000</td>
+      <td>control</td>
+      <td>bus</td>
+      <td>2004</td>
+      <td>manuell</td>
+      <td>158</td>
+      <td>andere</td>
+      <td>150,000km</td>
+      <td>3</td>
+      <td>lpg</td>
+      <td>peugeot</td>
+      <td>nein</td>
+      <td>2016-03-26 00:00:00</td>
+      <td>0</td>
+      <td>79588</td>
+      <td>2016-04-06 06:45:54</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>2016-04-04 13:38:56</td>
+      <td>BMW_740i_4_4_Liter_HAMANN_UMBAU_Mega_Optik</td>
+      <td>privat</td>
+      <td>Angebot</td>
+      <td>$8,500</td>
+      <td>control</td>
+      <td>limousine</td>
+      <td>1997</td>
+      <td>automatik</td>
+      <td>286</td>
+      <td>7er</td>
+      <td>150,000km</td>
+      <td>6</td>
+      <td>benzin</td>
+      <td>bmw</td>
+      <td>nein</td>
+      <td>2016-04-04 00:00:00</td>
+      <td>0</td>
+      <td>71034</td>
+      <td>2016-04-06 14:45:08</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>2016-03-26 18:57:24</td>
+      <td>Volkswagen_Golf_1.6_United</td>
+      <td>privat</td>
+      <td>Angebot</td>
+      <td>$8,990</td>
+      <td>test</td>
+      <td>limousine</td>
+      <td>2009</td>
+      <td>manuell</td>
+      <td>102</td>
+      <td>golf</td>
+      <td>70,000km</td>
+      <td>7</td>
+      <td>benzin</td>
+      <td>volkswagen</td>
+      <td>nein</td>
+      <td>2016-03-26 00:00:00</td>
+      <td>0</td>
+      <td>35394</td>
+      <td>2016-04-06 20:15:37</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>2016-03-12 16:58:10</td>
+      <td>Smart_smart_fortwo_coupe_softouch/F1/Klima/Pan...</td>
+      <td>privat</td>
+      <td>Angebot</td>
+      <td>$4,350</td>
+      <td>control</td>
+      <td>kleinwagen</td>
+      <td>2007</td>
+      <td>automatik</td>
+      <td>71</td>
+      <td>fortwo</td>
+      <td>70,000km</td>
+      <td>6</td>
+      <td>benzin</td>
+      <td>smart</td>
+      <td>nein</td>
+      <td>2016-03-12 00:00:00</td>
+      <td>0</td>
+      <td>33729</td>
+      <td>2016-03-15 03:16:28</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>2016-04-01 14:38:50</td>
+      <td>Ford_Focus_1_6_Benzin_TÜV_neu_ist_sehr_gepfleg...</td>
+      <td>privat</td>
+      <td>Angebot</td>
+      <td>$1,350</td>
+      <td>test</td>
+      <td>kombi</td>
+      <td>2003</td>
+      <td>manuell</td>
+      <td>0</td>
+      <td>focus</td>
+      <td>150,000km</td>
+      <td>7</td>
+      <td>benzin</td>
+      <td>ford</td>
+      <td>nein</td>
+      <td>2016-04-01 00:00:00</td>
+      <td>0</td>
+      <td>39218</td>
+      <td>2016-04-01 14:38:50</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>2016-03-21 13:47:45</td>
+      <td>Chrysler_Grand_Voyager_2.8_CRD_Aut.Limited_Sto...</td>
+      <td>privat</td>
+      <td>Angebot</td>
+      <td>$7,900</td>
+      <td>test</td>
+      <td>bus</td>
+      <td>2006</td>
+      <td>automatik</td>
+      <td>150</td>
+      <td>voyager</td>
+      <td>150,000km</td>
+      <td>4</td>
+      <td>diesel</td>
+      <td>chrysler</td>
+      <td>NaN</td>
+      <td>2016-03-21 00:00:00</td>
+      <td>0</td>
+      <td>22962</td>
+      <td>2016-04-06 09:45:21</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>2016-03-20 17:55:21</td>
+      <td>VW_Golf_III_GT_Special_Electronic_Green_Metall...</td>
+      <td>privat</td>
+      <td>Angebot</td>
+      <td>$300</td>
+      <td>test</td>
+      <td>limousine</td>
+      <td>1995</td>
+      <td>manuell</td>
+      <td>90</td>
+      <td>golf</td>
+      <td>150,000km</td>
+      <td>8</td>
+      <td>benzin</td>
+      <td>volkswagen</td>
+      <td>NaN</td>
+      <td>2016-03-20 00:00:00</td>
+      <td>0</td>
+      <td>31535</td>
+      <td>2016-03-23 02:48:59</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>2016-03-16 18:55:19</td>
+      <td>Golf_IV_1.9_TDI_90PS</td>
+      <td>privat</td>
+      <td>Angebot</td>
+      <td>$1,990</td>
+      <td>control</td>
+      <td>limousine</td>
+      <td>1998</td>
+      <td>manuell</td>
+      <td>90</td>
+      <td>golf</td>
+      <td>150,000km</td>
+      <td>12</td>
+      <td>diesel</td>
+      <td>volkswagen</td>
+      <td>nein</td>
+      <td>2016-03-16 00:00:00</td>
+      <td>0</td>
+      <td>53474</td>
+      <td>2016-04-07 03:17:32</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>2016-03-22 16:51:34</td>
+      <td>Seat_Arosa</td>
+      <td>privat</td>
+      <td>Angebot</td>
+      <td>$250</td>
+      <td>test</td>
+      <td>NaN</td>
+      <td>2000</td>
+      <td>manuell</td>
+      <td>0</td>
+      <td>arosa</td>
+      <td>150,000km</td>
+      <td>10</td>
+      <td>NaN</td>
+      <td>seat</td>
+      <td>nein</td>
+      <td>2016-03-22 00:00:00</td>
+      <td>0</td>
+      <td>7426</td>
+      <td>2016-03-26 18:18:10</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>2016-03-16 13:47:02</td>
+      <td>Renault_Megane_Scenic_1.6e_RT_Klimaanlage</td>
+      <td>privat</td>
+      <td>Angebot</td>
+      <td>$590</td>
+      <td>control</td>
+      <td>bus</td>
+      <td>1997</td>
+      <td>manuell</td>
+      <td>90</td>
+      <td>megane</td>
+      <td>150,000km</td>
+      <td>7</td>
+      <td>benzin</td>
+      <td>renault</td>
+      <td>nein</td>
+      <td>2016-03-16 00:00:00</td>
+      <td>0</td>
+      <td>15749</td>
+      <td>2016-04-06 10:46:35</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>2016-03-15 01:41:36</td>
+      <td>VW_Golf_Tuning_in_siber/grau</td>
+      <td>privat</td>
+      <td>Angebot</td>
+      <td>$999</td>
+      <td>test</td>
+      <td>NaN</td>
+      <td>2017</td>
+      <td>manuell</td>
+      <td>90</td>
+      <td>NaN</td>
+      <td>150,000km</td>
+      <td>4</td>
+      <td>benzin</td>
+      <td>volkswagen</td>
+      <td>nein</td>
+      <td>2016-03-14 00:00:00</td>
+      <td>0</td>
+      <td>86157</td>
+      <td>2016-04-07 03:16:21</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>2016-03-16 18:45:34</td>
+      <td>Mercedes_A140_Motorschaden</td>
+      <td>privat</td>
+      <td>Angebot</td>
+      <td>$350</td>
+      <td>control</td>
+      <td>NaN</td>
+      <td>2000</td>
+      <td>NaN</td>
+      <td>0</td>
+      <td>NaN</td>
+      <td>150,000km</td>
+      <td>0</td>
+      <td>benzin</td>
+      <td>mercedes_benz</td>
+      <td>NaN</td>
+      <td>2016-03-16 00:00:00</td>
+      <td>0</td>
+      <td>17498</td>
+      <td>2016-03-16 18:45:34</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>2016-03-31 19:48:22</td>
+      <td>Smart_smart_fortwo_coupe_softouch_pure_MHD_Pan...</td>
+      <td>privat</td>
+      <td>Angebot</td>
+      <td>$5,299</td>
+      <td>control</td>
+      <td>kleinwagen</td>
+      <td>2010</td>
+      <td>automatik</td>
+      <td>71</td>
+      <td>fortwo</td>
+      <td>50,000km</td>
+      <td>9</td>
+      <td>benzin</td>
+      <td>smart</td>
+      <td>nein</td>
+      <td>2016-03-31 00:00:00</td>
+      <td>0</td>
+      <td>34590</td>
+      <td>2016-04-06 14:17:52</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>2016-03-23 10:48:32</td>
+      <td>Audi_A3_1.6_tuning</td>
+      <td>privat</td>
+      <td>Angebot</td>
+      <td>$1,350</td>
+      <td>control</td>
+      <td>limousine</td>
+      <td>1999</td>
+      <td>manuell</td>
+      <td>101</td>
+      <td>a3</td>
+      <td>150,000km</td>
+      <td>11</td>
+      <td>benzin</td>
+      <td>audi</td>
+      <td>nein</td>
+      <td>2016-03-23 00:00:00</td>
+      <td>0</td>
+      <td>12043</td>
+      <td>2016-04-01 14:17:13</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>2016-03-23 11:50:46</td>
+      <td>Renault_Clio_3__Dynamique_1.2__16_V;_viele_Ver...</td>
+      <td>privat</td>
+      <td>Angebot</td>
+      <td>$3,999</td>
+      <td>test</td>
+      <td>kleinwagen</td>
+      <td>2007</td>
+      <td>manuell</td>
+      <td>75</td>
+      <td>clio</td>
+      <td>150,000km</td>
+      <td>9</td>
+      <td>benzin</td>
+      <td>renault</td>
+      <td>NaN</td>
+      <td>2016-03-23 00:00:00</td>
+      <td>0</td>
+      <td>81737</td>
+      <td>2016-04-01 15:46:47</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>2016-04-01 12:06:20</td>
+      <td>Corvette_C3_Coupe_T_Top_Crossfire_Injection</td>
+      <td>privat</td>
+      <td>Angebot</td>
+      <td>$18,900</td>
+      <td>test</td>
+      <td>coupe</td>
+      <td>1982</td>
+      <td>automatik</td>
+      <td>203</td>
+      <td>NaN</td>
+      <td>80,000km</td>
+      <td>6</td>
+      <td>benzin</td>
+      <td>sonstige_autos</td>
+      <td>nein</td>
+      <td>2016-04-01 00:00:00</td>
+      <td>0</td>
+      <td>61276</td>
+      <td>2016-04-02 21:10:48</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>2016-03-16 14:59:02</td>
+      <td>Opel_Vectra_B_Kombi</td>
+      <td>privat</td>
+      <td>Angebot</td>
+      <td>$350</td>
+      <td>test</td>
+      <td>kombi</td>
+      <td>1999</td>
+      <td>manuell</td>
+      <td>101</td>
+      <td>vectra</td>
+      <td>150,000km</td>
+      <td>5</td>
+      <td>benzin</td>
+      <td>opel</td>
+      <td>nein</td>
+      <td>2016-03-16 00:00:00</td>
+      <td>0</td>
+      <td>57299</td>
+      <td>2016-03-18 05:29:37</td>
+    </tr>
+    <tr>
+      <th>17</th>
+      <td>2016-03-29 11:46:22</td>
+      <td>Volkswagen_Scirocco_2_G60</td>
+      <td>privat</td>
+      <td>Angebot</td>
+      <td>$5,500</td>
+      <td>test</td>
+      <td>coupe</td>
+      <td>1990</td>
+      <td>manuell</td>
+      <td>205</td>
+      <td>scirocco</td>
+      <td>150,000km</td>
+      <td>6</td>
+      <td>benzin</td>
+      <td>volkswagen</td>
+      <td>nein</td>
+      <td>2016-03-29 00:00:00</td>
+      <td>0</td>
+      <td>74821</td>
+      <td>2016-04-05 20:46:26</td>
+    </tr>
+    <tr>
+      <th>18</th>
+      <td>2016-03-26 19:57:44</td>
+      <td>Verkaufen_mein_bmw_e36_320_i_touring</td>
+      <td>privat</td>
+      <td>Angebot</td>
+      <td>$300</td>
+      <td>control</td>
+      <td>bus</td>
+      <td>1995</td>
+      <td>manuell</td>
+      <td>150</td>
+      <td>3er</td>
+      <td>150,000km</td>
+      <td>0</td>
+      <td>benzin</td>
+      <td>bmw</td>
+      <td>NaN</td>
+      <td>2016-03-26 00:00:00</td>
+      <td>0</td>
+      <td>54329</td>
+      <td>2016-04-02 12:16:41</td>
+    </tr>
+    <tr>
+      <th>19</th>
+      <td>2016-03-17 13:36:21</td>
+      <td>mazda_tribute_2.0_mit_gas_und_tuev_neu_2018</td>
+      <td>privat</td>
+      <td>Angebot</td>
+      <td>$4,150</td>
+      <td>control</td>
+      <td>suv</td>
+      <td>2004</td>
+      <td>manuell</td>
+      <td>124</td>
+      <td>andere</td>
+      <td>150,000km</td>
+      <td>2</td>
+      <td>lpg</td>
+      <td>mazda</td>
+      <td>nein</td>
+      <td>2016-03-17 00:00:00</td>
+      <td>0</td>
+      <td>40878</td>
+      <td>2016-03-17 14:45:58</td>
+    </tr>
+    <tr>
+      <th>20</th>
+      <td>2016-03-05 19:57:31</td>
+      <td>Audi_A4_Avant_1.9_TDI_*6_Gang*AHK*Klimatronik*...</td>
+      <td>privat</td>
+      <td>Angebot</td>
+      <td>$3,500</td>
+      <td>test</td>
+      <td>kombi</td>
+      <td>2003</td>
+      <td>manuell</td>
+      <td>131</td>
+      <td>a4</td>
+      <td>150,000km</td>
+      <td>5</td>
+      <td>diesel</td>
+      <td>audi</td>
+      <td>NaN</td>
+      <td>2016-03-05 00:00:00</td>
+      <td>0</td>
+      <td>53913</td>
+      <td>2016-03-07 05:46:46</td>
+    </tr>
+    <tr>
+      <th>21</th>
+      <td>2016-03-06 19:07:10</td>
+      <td>Porsche_911_Carrera_4S_Cabrio</td>
+      <td>privat</td>
+      <td>Angebot</td>
+      <td>$41,500</td>
+      <td>test</td>
+      <td>cabrio</td>
+      <td>2004</td>
+      <td>manuell</td>
+      <td>320</td>
+      <td>911</td>
+      <td>150,000km</td>
+      <td>4</td>
+      <td>benzin</td>
+      <td>porsche</td>
+      <td>nein</td>
+      <td>2016-03-06 00:00:00</td>
+      <td>0</td>
+      <td>65428</td>
+      <td>2016-04-05 23:46:19</td>
+    </tr>
+    <tr>
+      <th>22</th>
+      <td>2016-03-28 20:50:54</td>
+      <td>MINI_Cooper_S_Cabrio</td>
+      <td>privat</td>
+      <td>Angebot</td>
+      <td>$25,450</td>
+      <td>control</td>
+      <td>cabrio</td>
+      <td>2015</td>
+      <td>manuell</td>
+      <td>184</td>
+      <td>cooper</td>
+      <td>10,000km</td>
+      <td>1</td>
+      <td>benzin</td>
+      <td>mini</td>
+      <td>nein</td>
+      <td>2016-03-28 00:00:00</td>
+      <td>0</td>
+      <td>44789</td>
+      <td>2016-04-01 06:45:30</td>
+    </tr>
+    <tr>
+      <th>23</th>
+      <td>2016-03-10 19:55:34</td>
+      <td>Peugeot_Boxer_2_2_HDi_120_Ps_9_Sitzer_inkl_Klima</td>
+      <td>privat</td>
+      <td>Angebot</td>
+      <td>$7,999</td>
+      <td>control</td>
+      <td>bus</td>
+      <td>2010</td>
+      <td>manuell</td>
+      <td>120</td>
+      <td>NaN</td>
+      <td>150,000km</td>
+      <td>2</td>
+      <td>diesel</td>
+      <td>peugeot</td>
+      <td>nein</td>
+      <td>2016-03-10 00:00:00</td>
+      <td>0</td>
+      <td>30900</td>
+      <td>2016-03-17 08:45:17</td>
+    </tr>
+    <tr>
+      <th>24</th>
+      <td>2016-04-03 11:57:02</td>
+      <td>BMW_535i_xDrive_Sport_Aut.</td>
+      <td>privat</td>
+      <td>Angebot</td>
+      <td>$48,500</td>
+      <td>control</td>
+      <td>limousine</td>
+      <td>2014</td>
+      <td>automatik</td>
+      <td>306</td>
+      <td>5er</td>
+      <td>30,000km</td>
+      <td>12</td>
+      <td>benzin</td>
+      <td>bmw</td>
+      <td>nein</td>
+      <td>2016-04-03 00:00:00</td>
+      <td>0</td>
+      <td>22547</td>
+      <td>2016-04-07 13:16:50</td>
+    </tr>
+    <tr>
+      <th>25</th>
+      <td>2016-03-21 21:56:18</td>
+      <td>Ford_escort_kombi_an_bastler_mit_ghia_ausstattung</td>
+      <td>privat</td>
+      <td>Angebot</td>
+      <td>$90</td>
+      <td>control</td>
+      <td>kombi</td>
+      <td>1996</td>
+      <td>manuell</td>
+      <td>116</td>
+      <td>NaN</td>
+      <td>150,000km</td>
+      <td>4</td>
+      <td>benzin</td>
+      <td>ford</td>
+      <td>ja</td>
+      <td>2016-03-21 00:00:00</td>
+      <td>0</td>
+      <td>27574</td>
+      <td>2016-04-01 05:16:49</td>
+    </tr>
+    <tr>
+      <th>26</th>
+      <td>2016-04-03 22:46:28</td>
+      <td>Volkswagen_Polo_Fox</td>
+      <td>privat</td>
+      <td>Angebot</td>
+      <td>$777</td>
+      <td>control</td>
+      <td>kleinwagen</td>
+      <td>1992</td>
+      <td>manuell</td>
+      <td>54</td>
+      <td>polo</td>
+      <td>125,000km</td>
+      <td>2</td>
+      <td>benzin</td>
+      <td>volkswagen</td>
+      <td>nein</td>
+      <td>2016-04-03 00:00:00</td>
+      <td>0</td>
+      <td>38110</td>
+      <td>2016-04-05 23:46:48</td>
+    </tr>
+    <tr>
+      <th>27</th>
+      <td>2016-03-27 18:45:01</td>
+      <td>Hat_einer_Ahnung_mit_Ford_Galaxy_HILFE</td>
+      <td>privat</td>
+      <td>Angebot</td>
+      <td>$0</td>
+      <td>control</td>
+      <td>NaN</td>
+      <td>2005</td>
+      <td>NaN</td>
+      <td>0</td>
+      <td>NaN</td>
+      <td>150,000km</td>
+      <td>0</td>
+      <td>NaN</td>
+      <td>ford</td>
+      <td>NaN</td>
+      <td>2016-03-27 00:00:00</td>
+      <td>0</td>
+      <td>66701</td>
+      <td>2016-03-27 18:45:01</td>
+    </tr>
+    <tr>
+      <th>28</th>
+      <td>2016-03-19 21:56:19</td>
+      <td>MINI_Cooper_D</td>
+      <td>privat</td>
+      <td>Angebot</td>
+      <td>$5,250</td>
+      <td>control</td>
+      <td>kleinwagen</td>
+      <td>2007</td>
+      <td>manuell</td>
+      <td>110</td>
+      <td>cooper</td>
+      <td>150,000km</td>
+      <td>7</td>
+      <td>diesel</td>
+      <td>mini</td>
+      <td>ja</td>
+      <td>2016-03-19 00:00:00</td>
+      <td>0</td>
+      <td>15745</td>
+      <td>2016-04-07 14:58:48</td>
+    </tr>
+    <tr>
+      <th>29</th>
+      <td>2016-04-02 12:45:44</td>
+      <td>Mercedes_Benz_E_320_T_CDI_Avantgarde_DPF7_Sitz...</td>
+      <td>privat</td>
+      <td>Angebot</td>
+      <td>$4,999</td>
+      <td>test</td>
+      <td>kombi</td>
+      <td>2004</td>
+      <td>automatik</td>
+      <td>204</td>
+      <td>e_klasse</td>
+      <td>150,000km</td>
+      <td>10</td>
+      <td>diesel</td>
+      <td>mercedes_benz</td>
+      <td>nein</td>
+      <td>2016-04-02 00:00:00</td>
+      <td>0</td>
+      <td>47638</td>
+      <td>2016-04-02 12:45:44</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>49970</th>
+      <td>2016-03-21 22:47:37</td>
+      <td>c4_Grand_Picasso_mit_Automatik_Leder_Navi_Temp...</td>
+      <td>privat</td>
+      <td>Angebot</td>
+      <td>$15,800</td>
+      <td>control</td>
+      <td>bus</td>
+      <td>2010</td>
+      <td>automatik</td>
+      <td>136</td>
+      <td>c4</td>
+      <td>60,000km</td>
+      <td>4</td>
+      <td>diesel</td>
+      <td>citroen</td>
+      <td>nein</td>
+      <td>2016-03-21 00:00:00</td>
+      <td>0</td>
+      <td>14947</td>
+      <td>2016-04-07 04:17:34</td>
+    </tr>
+    <tr>
+      <th>49971</th>
+      <td>2016-03-29 14:54:12</td>
+      <td>W.Lupo_1.0</td>
+      <td>privat</td>
+      <td>Angebot</td>
+      <td>$950</td>
+      <td>test</td>
+      <td>kleinwagen</td>
+      <td>2001</td>
+      <td>manuell</td>
+      <td>50</td>
+      <td>lupo</td>
+      <td>150,000km</td>
+      <td>4</td>
+      <td>benzin</td>
+      <td>volkswagen</td>
+      <td>nein</td>
+      <td>2016-03-29 00:00:00</td>
+      <td>0</td>
+      <td>65197</td>
+      <td>2016-03-29 20:41:51</td>
+    </tr>
+    <tr>
+      <th>49972</th>
+      <td>2016-03-26 22:25:23</td>
+      <td>Mercedes_Benz_Vito_115_CDI_Extralang_Aut.</td>
+      <td>privat</td>
+      <td>Angebot</td>
+      <td>$3,300</td>
+      <td>control</td>
+      <td>bus</td>
+      <td>2004</td>
+      <td>automatik</td>
+      <td>150</td>
+      <td>vito</td>
+      <td>150,000km</td>
+      <td>10</td>
+      <td>diesel</td>
+      <td>mercedes_benz</td>
+      <td>ja</td>
+      <td>2016-03-26 00:00:00</td>
+      <td>0</td>
+      <td>65326</td>
+      <td>2016-03-28 11:28:18</td>
+    </tr>
+    <tr>
+      <th>49973</th>
+      <td>2016-03-27 05:32:39</td>
+      <td>Mercedes_Benz_SLK_200_Kompressor</td>
+      <td>privat</td>
+      <td>Angebot</td>
+      <td>$6,000</td>
+      <td>control</td>
+      <td>cabrio</td>
+      <td>2004</td>
+      <td>manuell</td>
+      <td>163</td>
+      <td>slk</td>
+      <td>150,000km</td>
+      <td>11</td>
+      <td>benzin</td>
+      <td>mercedes_benz</td>
+      <td>nein</td>
+      <td>2016-03-27 00:00:00</td>
+      <td>0</td>
+      <td>53567</td>
+      <td>2016-03-27 08:25:24</td>
+    </tr>
+    <tr>
+      <th>49974</th>
+      <td>2016-03-20 10:52:31</td>
+      <td>Golf_1_Cabrio_Tuev_Neu_viele_Extras_alles_eing...</td>
+      <td>privat</td>
+      <td>Angebot</td>
+      <td>$0</td>
+      <td>control</td>
+      <td>cabrio</td>
+      <td>1983</td>
+      <td>manuell</td>
+      <td>70</td>
+      <td>golf</td>
+      <td>150,000km</td>
+      <td>2</td>
+      <td>benzin</td>
+      <td>volkswagen</td>
+      <td>nein</td>
+      <td>2016-03-20 00:00:00</td>
+      <td>0</td>
+      <td>8209</td>
+      <td>2016-03-27 19:48:16</td>
+    </tr>
+    <tr>
+      <th>49975</th>
+      <td>2016-03-27 20:51:39</td>
+      <td>Honda_Jazz_1.3_DSi_i_VTEC_IMA_CVT_Comfort</td>
+      <td>privat</td>
+      <td>Angebot</td>
+      <td>$9,700</td>
+      <td>control</td>
+      <td>kleinwagen</td>
+      <td>2012</td>
+      <td>automatik</td>
+      <td>88</td>
+      <td>jazz</td>
+      <td>100,000km</td>
+      <td>11</td>
+      <td>hybrid</td>
+      <td>honda</td>
+      <td>nein</td>
+      <td>2016-03-27 00:00:00</td>
+      <td>0</td>
+      <td>84385</td>
+      <td>2016-04-05 19:45:34</td>
+    </tr>
+    <tr>
+      <th>49976</th>
+      <td>2016-03-19 18:56:05</td>
+      <td>Audi_80_Avant_2.6_E__Vollausstattung!!_Einziga...</td>
+      <td>privat</td>
+      <td>Angebot</td>
+      <td>$5,900</td>
+      <td>test</td>
+      <td>kombi</td>
+      <td>1992</td>
+      <td>automatik</td>
+      <td>150</td>
+      <td>80</td>
+      <td>150,000km</td>
+      <td>12</td>
+      <td>benzin</td>
+      <td>audi</td>
+      <td>nein</td>
+      <td>2016-03-19 00:00:00</td>
+      <td>0</td>
+      <td>36100</td>
+      <td>2016-04-07 06:16:44</td>
+    </tr>
+    <tr>
+      <th>49977</th>
+      <td>2016-03-31 18:37:18</td>
+      <td>Mercedes_Benz_C200_Cdi_W203</td>
+      <td>privat</td>
+      <td>Angebot</td>
+      <td>$5,500</td>
+      <td>control</td>
+      <td>limousine</td>
+      <td>2003</td>
+      <td>manuell</td>
+      <td>116</td>
+      <td>c_klasse</td>
+      <td>150,000km</td>
+      <td>2</td>
+      <td>diesel</td>
+      <td>mercedes_benz</td>
+      <td>nein</td>
+      <td>2016-03-31 00:00:00</td>
+      <td>0</td>
+      <td>33739</td>
+      <td>2016-04-06 12:16:11</td>
+    </tr>
+    <tr>
+      <th>49978</th>
+      <td>2016-04-04 10:37:14</td>
+      <td>Mercedes_Benz_E_200_Classic</td>
+      <td>privat</td>
+      <td>Angebot</td>
+      <td>$900</td>
+      <td>control</td>
+      <td>limousine</td>
+      <td>1996</td>
+      <td>automatik</td>
+      <td>136</td>
+      <td>e_klasse</td>
+      <td>150,000km</td>
+      <td>9</td>
+      <td>benzin</td>
+      <td>mercedes_benz</td>
+      <td>ja</td>
+      <td>2016-04-04 00:00:00</td>
+      <td>0</td>
+      <td>24405</td>
+      <td>2016-04-06 12:44:20</td>
+    </tr>
+    <tr>
+      <th>49979</th>
+      <td>2016-03-20 18:38:40</td>
+      <td>Volkswagen_Polo_1.6_TDI_Style</td>
+      <td>privat</td>
+      <td>Angebot</td>
+      <td>$11,000</td>
+      <td>test</td>
+      <td>kleinwagen</td>
+      <td>2011</td>
+      <td>manuell</td>
+      <td>90</td>
+      <td>polo</td>
+      <td>70,000km</td>
+      <td>11</td>
+      <td>diesel</td>
+      <td>volkswagen</td>
+      <td>nein</td>
+      <td>2016-03-20 00:00:00</td>
+      <td>0</td>
+      <td>48455</td>
+      <td>2016-04-07 01:45:12</td>
+    </tr>
+    <tr>
+      <th>49980</th>
+      <td>2016-03-12 10:55:54</td>
+      <td>Ford_Escort_Turnier_16V</td>
+      <td>privat</td>
+      <td>Angebot</td>
+      <td>$400</td>
+      <td>control</td>
+      <td>kombi</td>
+      <td>1995</td>
+      <td>manuell</td>
+      <td>105</td>
+      <td>escort</td>
+      <td>125,000km</td>
+      <td>3</td>
+      <td>benzin</td>
+      <td>ford</td>
+      <td>NaN</td>
+      <td>2016-03-12 00:00:00</td>
+      <td>0</td>
+      <td>56218</td>
+      <td>2016-04-06 17:16:49</td>
+    </tr>
+    <tr>
+      <th>49981</th>
+      <td>2016-03-15 09:38:21</td>
+      <td>Opel_Astra_Kombi_mit_Anhaengerkupplung</td>
+      <td>privat</td>
+      <td>Angebot</td>
+      <td>$2,000</td>
+      <td>control</td>
+      <td>kombi</td>
+      <td>1998</td>
+      <td>manuell</td>
+      <td>115</td>
+      <td>astra</td>
+      <td>150,000km</td>
+      <td>12</td>
+      <td>benzin</td>
+      <td>opel</td>
+      <td>nein</td>
+      <td>2016-03-15 00:00:00</td>
+      <td>0</td>
+      <td>86859</td>
+      <td>2016-04-05 17:21:46</td>
+    </tr>
+    <tr>
+      <th>49982</th>
+      <td>2016-03-29 18:51:08</td>
+      <td>Skoda_Fabia_4_Tuerer_Bj:2004__85.000Tkm</td>
+      <td>privat</td>
+      <td>Angebot</td>
+      <td>$1,950</td>
+      <td>control</td>
+      <td>kleinwagen</td>
+      <td>2004</td>
+      <td>manuell</td>
+      <td>0</td>
+      <td>fabia</td>
+      <td>90,000km</td>
+      <td>7</td>
+      <td>benzin</td>
+      <td>skoda</td>
+      <td>NaN</td>
+      <td>2016-03-29 00:00:00</td>
+      <td>0</td>
+      <td>45884</td>
+      <td>2016-03-29 18:51:08</td>
+    </tr>
+    <tr>
+      <th>49983</th>
+      <td>2016-03-06 12:43:04</td>
+      <td>Ford_focus_99</td>
+      <td>privat</td>
+      <td>Angebot</td>
+      <td>$600</td>
+      <td>test</td>
+      <td>kleinwagen</td>
+      <td>1999</td>
+      <td>manuell</td>
+      <td>101</td>
+      <td>focus</td>
+      <td>150,000km</td>
+      <td>4</td>
+      <td>benzin</td>
+      <td>ford</td>
+      <td>NaN</td>
+      <td>2016-03-06 00:00:00</td>
+      <td>0</td>
+      <td>52477</td>
+      <td>2016-03-09 06:16:08</td>
+    </tr>
+    <tr>
+      <th>49984</th>
+      <td>2016-03-31 22:48:48</td>
+      <td>Student_sucht_ein__Anfaengerauto___ab_2000_BJ_...</td>
+      <td>privat</td>
+      <td>Angebot</td>
+      <td>$0</td>
+      <td>test</td>
+      <td>NaN</td>
+      <td>2000</td>
+      <td>NaN</td>
+      <td>0</td>
+      <td>NaN</td>
+      <td>150,000km</td>
+      <td>0</td>
+      <td>NaN</td>
+      <td>sonstige_autos</td>
+      <td>NaN</td>
+      <td>2016-03-31 00:00:00</td>
+      <td>0</td>
+      <td>12103</td>
+      <td>2016-04-02 19:44:53</td>
+    </tr>
+    <tr>
+      <th>49985</th>
+      <td>2016-04-02 16:38:23</td>
+      <td>Verkaufe_meinen_vw_vento!</td>
+      <td>privat</td>
+      <td>Angebot</td>
+      <td>$1,000</td>
+      <td>control</td>
+      <td>NaN</td>
+      <td>1995</td>
+      <td>automatik</td>
+      <td>0</td>
+      <td>NaN</td>
+      <td>150,000km</td>
+      <td>0</td>
+      <td>benzin</td>
+      <td>volkswagen</td>
+      <td>NaN</td>
+      <td>2016-04-02 00:00:00</td>
+      <td>0</td>
+      <td>30900</td>
+      <td>2016-04-06 15:17:52</td>
+    </tr>
+    <tr>
+      <th>49986</th>
+      <td>2016-04-04 20:46:02</td>
+      <td>Chrysler_300C_3.0_CRD_DPF_Automatik_Voll_Ausst...</td>
+      <td>privat</td>
+      <td>Angebot</td>
+      <td>$15,900</td>
+      <td>control</td>
+      <td>limousine</td>
+      <td>2010</td>
+      <td>automatik</td>
+      <td>218</td>
+      <td>300c</td>
+      <td>125,000km</td>
+      <td>11</td>
+      <td>diesel</td>
+      <td>chrysler</td>
+      <td>nein</td>
+      <td>2016-04-04 00:00:00</td>
+      <td>0</td>
+      <td>73527</td>
+      <td>2016-04-06 23:16:00</td>
+    </tr>
+    <tr>
+      <th>49987</th>
+      <td>2016-03-22 20:47:27</td>
+      <td>Audi_A3_Limousine_2.0_TDI_DPF_Ambition__NAVI__...</td>
+      <td>privat</td>
+      <td>Angebot</td>
+      <td>$21,990</td>
+      <td>control</td>
+      <td>limousine</td>
+      <td>2013</td>
+      <td>manuell</td>
+      <td>150</td>
+      <td>a3</td>
+      <td>50,000km</td>
+      <td>11</td>
+      <td>diesel</td>
+      <td>audi</td>
+      <td>nein</td>
+      <td>2016-03-22 00:00:00</td>
+      <td>0</td>
+      <td>94362</td>
+      <td>2016-03-26 22:46:06</td>
+    </tr>
+    <tr>
+      <th>49988</th>
+      <td>2016-03-28 19:49:51</td>
+      <td>BMW_330_Ci</td>
+      <td>privat</td>
+      <td>Angebot</td>
+      <td>$9,550</td>
+      <td>control</td>
+      <td>coupe</td>
+      <td>2001</td>
+      <td>manuell</td>
+      <td>231</td>
+      <td>3er</td>
+      <td>150,000km</td>
+      <td>10</td>
+      <td>benzin</td>
+      <td>bmw</td>
+      <td>nein</td>
+      <td>2016-03-28 00:00:00</td>
+      <td>0</td>
+      <td>83646</td>
+      <td>2016-04-07 02:17:40</td>
+    </tr>
+    <tr>
+      <th>49989</th>
+      <td>2016-03-11 19:50:37</td>
+      <td>VW_Polo_zum_Ausschlachten_oder_Wiederaufbau</td>
+      <td>privat</td>
+      <td>Angebot</td>
+      <td>$150</td>
+      <td>test</td>
+      <td>kleinwagen</td>
+      <td>1997</td>
+      <td>manuell</td>
+      <td>0</td>
+      <td>polo</td>
+      <td>150,000km</td>
+      <td>5</td>
+      <td>benzin</td>
+      <td>volkswagen</td>
+      <td>ja</td>
+      <td>2016-03-11 00:00:00</td>
+      <td>0</td>
+      <td>21244</td>
+      <td>2016-03-12 10:17:55</td>
+    </tr>
+    <tr>
+      <th>49990</th>
+      <td>2016-03-21 19:54:19</td>
+      <td>Mercedes_Benz_A_200__BlueEFFICIENCY__Urban</td>
+      <td>privat</td>
+      <td>Angebot</td>
+      <td>$17,500</td>
+      <td>test</td>
+      <td>limousine</td>
+      <td>2012</td>
+      <td>manuell</td>
+      <td>156</td>
+      <td>a_klasse</td>
+      <td>30,000km</td>
+      <td>12</td>
+      <td>benzin</td>
+      <td>mercedes_benz</td>
+      <td>nein</td>
+      <td>2016-03-21 00:00:00</td>
+      <td>0</td>
+      <td>58239</td>
+      <td>2016-04-06 22:46:57</td>
+    </tr>
+    <tr>
+      <th>49991</th>
+      <td>2016-03-06 15:25:19</td>
+      <td>Kleinwagen</td>
+      <td>privat</td>
+      <td>Angebot</td>
+      <td>$500</td>
+      <td>control</td>
+      <td>NaN</td>
+      <td>2016</td>
+      <td>manuell</td>
+      <td>0</td>
+      <td>twingo</td>
+      <td>150,000km</td>
+      <td>0</td>
+      <td>benzin</td>
+      <td>renault</td>
+      <td>NaN</td>
+      <td>2016-03-06 00:00:00</td>
+      <td>0</td>
+      <td>61350</td>
+      <td>2016-03-06 18:24:19</td>
+    </tr>
+    <tr>
+      <th>49992</th>
+      <td>2016-03-10 19:37:38</td>
+      <td>Fiat_Grande_Punto_1.4_T_Jet_16V_Sport</td>
+      <td>privat</td>
+      <td>Angebot</td>
+      <td>$4,800</td>
+      <td>control</td>
+      <td>kleinwagen</td>
+      <td>2009</td>
+      <td>manuell</td>
+      <td>120</td>
+      <td>andere</td>
+      <td>125,000km</td>
+      <td>9</td>
+      <td>lpg</td>
+      <td>fiat</td>
+      <td>nein</td>
+      <td>2016-03-10 00:00:00</td>
+      <td>0</td>
+      <td>68642</td>
+      <td>2016-03-13 01:44:51</td>
+    </tr>
+    <tr>
+      <th>49993</th>
+      <td>2016-03-15 18:47:35</td>
+      <td>Audi_A3__1_8l__Silber;_schoenes_Fahrzeug</td>
+      <td>privat</td>
+      <td>Angebot</td>
+      <td>$1,650</td>
+      <td>control</td>
+      <td>kleinwagen</td>
+      <td>1997</td>
+      <td>manuell</td>
+      <td>0</td>
+      <td>NaN</td>
+      <td>150,000km</td>
+      <td>7</td>
+      <td>benzin</td>
+      <td>audi</td>
+      <td>NaN</td>
+      <td>2016-03-15 00:00:00</td>
+      <td>0</td>
+      <td>65203</td>
+      <td>2016-04-06 19:46:53</td>
+    </tr>
+    <tr>
+      <th>49994</th>
+      <td>2016-03-22 17:36:42</td>
+      <td>Audi_A6__S6__Avant_4.2_quattro_eventuell_Tausc...</td>
+      <td>privat</td>
+      <td>Angebot</td>
+      <td>$5,000</td>
+      <td>control</td>
+      <td>kombi</td>
+      <td>2001</td>
+      <td>automatik</td>
+      <td>299</td>
+      <td>a6</td>
+      <td>150,000km</td>
+      <td>1</td>
+      <td>benzin</td>
+      <td>audi</td>
+      <td>nein</td>
+      <td>2016-03-22 00:00:00</td>
+      <td>0</td>
+      <td>46537</td>
+      <td>2016-04-06 08:16:39</td>
+    </tr>
+    <tr>
+      <th>49995</th>
+      <td>2016-03-27 14:38:19</td>
+      <td>Audi_Q5_3.0_TDI_qu._S_tr.__Navi__Panorama__Xenon</td>
+      <td>privat</td>
+      <td>Angebot</td>
+      <td>$24,900</td>
+      <td>control</td>
+      <td>limousine</td>
+      <td>2011</td>
+      <td>automatik</td>
+      <td>239</td>
+      <td>q5</td>
+      <td>100,000km</td>
+      <td>1</td>
+      <td>diesel</td>
+      <td>audi</td>
+      <td>nein</td>
+      <td>2016-03-27 00:00:00</td>
+      <td>0</td>
+      <td>82131</td>
+      <td>2016-04-01 13:47:40</td>
+    </tr>
+    <tr>
+      <th>49996</th>
+      <td>2016-03-28 10:50:25</td>
+      <td>Opel_Astra_F_Cabrio_Bertone_Edition___TÜV_neu+...</td>
+      <td>privat</td>
+      <td>Angebot</td>
+      <td>$1,980</td>
+      <td>control</td>
+      <td>cabrio</td>
+      <td>1996</td>
+      <td>manuell</td>
+      <td>75</td>
+      <td>astra</td>
+      <td>150,000km</td>
+      <td>5</td>
+      <td>benzin</td>
+      <td>opel</td>
+      <td>nein</td>
+      <td>2016-03-28 00:00:00</td>
+      <td>0</td>
+      <td>44807</td>
+      <td>2016-04-02 14:18:02</td>
+    </tr>
+    <tr>
+      <th>49997</th>
+      <td>2016-04-02 14:44:48</td>
+      <td>Fiat_500_C_1.2_Dualogic_Lounge</td>
+      <td>privat</td>
+      <td>Angebot</td>
+      <td>$13,200</td>
+      <td>test</td>
+      <td>cabrio</td>
+      <td>2014</td>
+      <td>automatik</td>
+      <td>69</td>
+      <td>500</td>
+      <td>5,000km</td>
+      <td>11</td>
+      <td>benzin</td>
+      <td>fiat</td>
+      <td>nein</td>
+      <td>2016-04-02 00:00:00</td>
+      <td>0</td>
+      <td>73430</td>
+      <td>2016-04-04 11:47:27</td>
+    </tr>
+    <tr>
+      <th>49998</th>
+      <td>2016-03-08 19:25:42</td>
+      <td>Audi_A3_2.0_TDI_Sportback_Ambition</td>
+      <td>privat</td>
+      <td>Angebot</td>
+      <td>$22,900</td>
+      <td>control</td>
+      <td>kombi</td>
+      <td>2013</td>
+      <td>manuell</td>
+      <td>150</td>
+      <td>a3</td>
+      <td>40,000km</td>
+      <td>11</td>
+      <td>diesel</td>
+      <td>audi</td>
+      <td>nein</td>
+      <td>2016-03-08 00:00:00</td>
+      <td>0</td>
+      <td>35683</td>
+      <td>2016-04-05 16:45:07</td>
+    </tr>
+    <tr>
+      <th>49999</th>
+      <td>2016-03-14 00:42:12</td>
+      <td>Opel_Vectra_1.6_16V</td>
+      <td>privat</td>
+      <td>Angebot</td>
+      <td>$1,250</td>
+      <td>control</td>
+      <td>limousine</td>
+      <td>1996</td>
+      <td>manuell</td>
+      <td>101</td>
+      <td>vectra</td>
+      <td>150,000km</td>
+      <td>1</td>
+      <td>benzin</td>
+      <td>opel</td>
+      <td>nein</td>
+      <td>2016-03-13 00:00:00</td>
+      <td>0</td>
+      <td>45897</td>
+      <td>2016-04-06 21:18:48</td>
+    </tr>
+  </tbody>
+</table>
+<p>50000 rows × 20 columns</p>
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#get the info of the dataset</span>
+<span class="n">autos</span><span class="o">.</span><span class="n">info</span><span class="p">()</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>&lt;class &#39;pandas.core.frame.DataFrame&#39;&gt;
+RangeIndex: 50000 entries, 0 to 49999
+Data columns (total 20 columns):
+dateCrawled            50000 non-null object
+name                   50000 non-null object
+seller                 50000 non-null object
+offerType              50000 non-null object
+price                  50000 non-null object
+abtest                 50000 non-null object
+vehicleType            44905 non-null object
+yearOfRegistration     50000 non-null int64
+gearbox                47320 non-null object
+powerPS                50000 non-null int64
+model                  47242 non-null object
+odometer               50000 non-null object
+monthOfRegistration    50000 non-null int64
+fuelType               45518 non-null object
+brand                  50000 non-null object
+notRepairedDamage      40171 non-null object
+dateCreated            50000 non-null object
+nrOfPictures           50000 non-null int64
+postalCode             50000 non-null int64
+lastSeen               50000 non-null object
+dtypes: int64(5), object(15)
+memory usage: 7.6+ MB
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># get the head of the dataset</span>
+<span class="n">autos</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt output_prompt">Out[5]:</div>
+
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>dateCrawled</th>
+      <th>name</th>
+      <th>seller</th>
+      <th>offerType</th>
+      <th>price</th>
+      <th>abtest</th>
+      <th>vehicleType</th>
+      <th>yearOfRegistration</th>
+      <th>gearbox</th>
+      <th>powerPS</th>
+      <th>model</th>
+      <th>odometer</th>
+      <th>monthOfRegistration</th>
+      <th>fuelType</th>
+      <th>brand</th>
+      <th>notRepairedDamage</th>
+      <th>dateCreated</th>
+      <th>nrOfPictures</th>
+      <th>postalCode</th>
+      <th>lastSeen</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>2016-03-26 17:47:46</td>
+      <td>Peugeot_807_160_NAVTECH_ON_BOARD</td>
+      <td>privat</td>
+      <td>Angebot</td>
+      <td>$5,000</td>
+      <td>control</td>
+      <td>bus</td>
+      <td>2004</td>
+      <td>manuell</td>
+      <td>158</td>
+      <td>andere</td>
+      <td>150,000km</td>
+      <td>3</td>
+      <td>lpg</td>
+      <td>peugeot</td>
+      <td>nein</td>
+      <td>2016-03-26 00:00:00</td>
+      <td>0</td>
+      <td>79588</td>
+      <td>2016-04-06 06:45:54</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>2016-04-04 13:38:56</td>
+      <td>BMW_740i_4_4_Liter_HAMANN_UMBAU_Mega_Optik</td>
+      <td>privat</td>
+      <td>Angebot</td>
+      <td>$8,500</td>
+      <td>control</td>
+      <td>limousine</td>
+      <td>1997</td>
+      <td>automatik</td>
+      <td>286</td>
+      <td>7er</td>
+      <td>150,000km</td>
+      <td>6</td>
+      <td>benzin</td>
+      <td>bmw</td>
+      <td>nein</td>
+      <td>2016-04-04 00:00:00</td>
+      <td>0</td>
+      <td>71034</td>
+      <td>2016-04-06 14:45:08</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>2016-03-26 18:57:24</td>
+      <td>Volkswagen_Golf_1.6_United</td>
+      <td>privat</td>
+      <td>Angebot</td>
+      <td>$8,990</td>
+      <td>test</td>
+      <td>limousine</td>
+      <td>2009</td>
+      <td>manuell</td>
+      <td>102</td>
+      <td>golf</td>
+      <td>70,000km</td>
+      <td>7</td>
+      <td>benzin</td>
+      <td>volkswagen</td>
+      <td>nein</td>
+      <td>2016-03-26 00:00:00</td>
+      <td>0</td>
+      <td>35394</td>
+      <td>2016-04-06 20:15:37</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>2016-03-12 16:58:10</td>
+      <td>Smart_smart_fortwo_coupe_softouch/F1/Klima/Pan...</td>
+      <td>privat</td>
+      <td>Angebot</td>
+      <td>$4,350</td>
+      <td>control</td>
+      <td>kleinwagen</td>
+      <td>2007</td>
+      <td>automatik</td>
+      <td>71</td>
+      <td>fortwo</td>
+      <td>70,000km</td>
+      <td>6</td>
+      <td>benzin</td>
+      <td>smart</td>
+      <td>nein</td>
+      <td>2016-03-12 00:00:00</td>
+      <td>0</td>
+      <td>33729</td>
+      <td>2016-03-15 03:16:28</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>2016-04-01 14:38:50</td>
+      <td>Ford_Focus_1_6_Benzin_TÜV_neu_ist_sehr_gepfleg...</td>
+      <td>privat</td>
+      <td>Angebot</td>
+      <td>$1,350</td>
+      <td>test</td>
+      <td>kombi</td>
+      <td>2003</td>
+      <td>manuell</td>
+      <td>0</td>
+      <td>focus</td>
+      <td>150,000km</td>
+      <td>7</td>
+      <td>benzin</td>
+      <td>ford</td>
+      <td>nein</td>
+      <td>2016-04-01 00:00:00</td>
+      <td>0</td>
+      <td>39218</td>
+      <td>2016-04-01 14:38:50</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>We can make the following observations:</p>
+<ul>
+<li>The dataset contains 20 columns, most of which are strings.</li>
+<li>Some columns have null values, but none have more than ~ 20% null values.</li>
+<li>The column names use <a href="https://en.wikipedia.org/wiki/Camel_case">camelCase</a> instead of Python's preferred <a href="https://en.wikipedia.org/wiki/Snake_case">snake_case</a>, which means we can't just replace spaces with underscores. </li>
+</ul>
+<p>Let's convert the column names from camelCase to snake_case and reword some of the column names based on the data dictionary to be more descriptive.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># print the column names</span>
+<span class="n">autos</span><span class="o">.</span><span class="n">columns</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt output_prompt">Out[6]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>Index([&#39;dateCrawled&#39;, &#39;name&#39;, &#39;seller&#39;, &#39;offerType&#39;, &#39;price&#39;, &#39;abtest&#39;,
+       &#39;vehicleType&#39;, &#39;yearOfRegistration&#39;, &#39;gearbox&#39;, &#39;powerPS&#39;, &#39;model&#39;,
+       &#39;odometer&#39;, &#39;monthOfRegistration&#39;, &#39;fuelType&#39;, &#39;brand&#39;,
+       &#39;notRepairedDamage&#39;, &#39;dateCreated&#39;, &#39;nrOfPictures&#39;, &#39;postalCode&#39;,
+       &#39;lastSeen&#39;],
+      dtype=&#39;object&#39;)</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#convert column names from camelCase to snake_case</span>
+<span class="n">columns</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;date_crawled&#39;</span><span class="p">,</span> <span class="s1">&#39;name&#39;</span><span class="p">,</span> <span class="s1">&#39;seller&#39;</span><span class="p">,</span> <span class="s1">&#39;offer_type&#39;</span><span class="p">,</span> <span class="s1">&#39;price&#39;</span><span class="p">,</span> <span class="s1">&#39;abtest&#39;</span><span class="p">,</span>
+       <span class="s1">&#39;vehicle_type&#39;</span><span class="p">,</span> <span class="s1">&#39;year_of_registration&#39;</span><span class="p">,</span> <span class="s1">&#39;gear_box&#39;</span><span class="p">,</span> <span class="s1">&#39;power_ps&#39;</span><span class="p">,</span> <span class="s1">&#39;model&#39;</span><span class="p">,</span>
+       <span class="s1">&#39;odometer&#39;</span><span class="p">,</span> <span class="s1">&#39;month_of_registration&#39;</span><span class="p">,</span> <span class="s1">&#39;fuel_type&#39;</span><span class="p">,</span> <span class="s1">&#39;brand&#39;</span><span class="p">,</span>
+       <span class="s1">&#39;not_repaired_damage&#39;</span><span class="p">,</span> <span class="s1">&#39;date_created&#39;</span><span class="p">,</span> <span class="s1">&#39;nr_of_pictures&#39;</span><span class="p">,</span> <span class="s1">&#39;postal_code&#39;</span><span class="p">,</span>
+       <span class="s1">&#39;last_seen&#39;</span><span class="p">]</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#assign the column names back to the datafram</span>
+<span class="n">autos</span><span class="o">.</span><span class="n">columns</span> <span class="o">=</span> <span class="n">columns</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#see the head of the dataframe again</span>
+<span class="n">autos</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt output_prompt">Out[9]:</div>
+
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>date_crawled</th>
+      <th>name</th>
+      <th>seller</th>
+      <th>offer_type</th>
+      <th>price</th>
+      <th>abtest</th>
+      <th>vehicle_type</th>
+      <th>year_of_registration</th>
+      <th>gear_box</th>
+      <th>power_ps</th>
+      <th>model</th>
+      <th>odometer</th>
+      <th>month_of_registration</th>
+      <th>fuel_type</th>
+      <th>brand</th>
+      <th>not_repaired_damage</th>
+      <th>date_created</th>
+      <th>nr_of_pictures</th>
+      <th>postal_code</th>
+      <th>last_seen</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>2016-03-26 17:47:46</td>
+      <td>Peugeot_807_160_NAVTECH_ON_BOARD</td>
+      <td>privat</td>
+      <td>Angebot</td>
+      <td>$5,000</td>
+      <td>control</td>
+      <td>bus</td>
+      <td>2004</td>
+      <td>manuell</td>
+      <td>158</td>
+      <td>andere</td>
+      <td>150,000km</td>
+      <td>3</td>
+      <td>lpg</td>
+      <td>peugeot</td>
+      <td>nein</td>
+      <td>2016-03-26 00:00:00</td>
+      <td>0</td>
+      <td>79588</td>
+      <td>2016-04-06 06:45:54</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>2016-04-04 13:38:56</td>
+      <td>BMW_740i_4_4_Liter_HAMANN_UMBAU_Mega_Optik</td>
+      <td>privat</td>
+      <td>Angebot</td>
+      <td>$8,500</td>
+      <td>control</td>
+      <td>limousine</td>
+      <td>1997</td>
+      <td>automatik</td>
+      <td>286</td>
+      <td>7er</td>
+      <td>150,000km</td>
+      <td>6</td>
+      <td>benzin</td>
+      <td>bmw</td>
+      <td>nein</td>
+      <td>2016-04-04 00:00:00</td>
+      <td>0</td>
+      <td>71034</td>
+      <td>2016-04-06 14:45:08</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>2016-03-26 18:57:24</td>
+      <td>Volkswagen_Golf_1.6_United</td>
+      <td>privat</td>
+      <td>Angebot</td>
+      <td>$8,990</td>
+      <td>test</td>
+      <td>limousine</td>
+      <td>2009</td>
+      <td>manuell</td>
+      <td>102</td>
+      <td>golf</td>
+      <td>70,000km</td>
+      <td>7</td>
+      <td>benzin</td>
+      <td>volkswagen</td>
+      <td>nein</td>
+      <td>2016-03-26 00:00:00</td>
+      <td>0</td>
+      <td>35394</td>
+      <td>2016-04-06 20:15:37</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>2016-03-12 16:58:10</td>
+      <td>Smart_smart_fortwo_coupe_softouch/F1/Klima/Pan...</td>
+      <td>privat</td>
+      <td>Angebot</td>
+      <td>$4,350</td>
+      <td>control</td>
+      <td>kleinwagen</td>
+      <td>2007</td>
+      <td>automatik</td>
+      <td>71</td>
+      <td>fortwo</td>
+      <td>70,000km</td>
+      <td>6</td>
+      <td>benzin</td>
+      <td>smart</td>
+      <td>nein</td>
+      <td>2016-03-12 00:00:00</td>
+      <td>0</td>
+      <td>33729</td>
+      <td>2016-03-15 03:16:28</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>2016-04-01 14:38:50</td>
+      <td>Ford_Focus_1_6_Benzin_TÜV_neu_ist_sehr_gepfleg...</td>
+      <td>privat</td>
+      <td>Angebot</td>
+      <td>$1,350</td>
+      <td>test</td>
+      <td>kombi</td>
+      <td>2003</td>
+      <td>manuell</td>
+      <td>0</td>
+      <td>focus</td>
+      <td>150,000km</td>
+      <td>7</td>
+      <td>benzin</td>
+      <td>ford</td>
+      <td>nein</td>
+      <td>2016-04-01 00:00:00</td>
+      <td>0</td>
+      <td>39218</td>
+      <td>2016-04-01 14:38:50</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Now let us do some basic data exploration to determine what other cleaning tasks need to be done. Initially we will look for: -Text columns where all or almost all values are the same. These can often be dropped as they don't have useful information for analysis. -Example of numeric data stored as text which can be cleaned and converted.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#use describe to give a quick summary of the data, </span>
+<span class="c1">#include = &#39;all&#39; to get also categorical columns</span>
+<span class="n">autos</span><span class="o">.</span><span class="n">describe</span><span class="p">(</span><span class="n">include</span> <span class="o">=</span> <span class="s1">&#39;all&#39;</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt output_prompt">Out[10]:</div>
+
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>date_crawled</th>
+      <th>name</th>
+      <th>seller</th>
+      <th>offer_type</th>
+      <th>price</th>
+      <th>abtest</th>
+      <th>vehicle_type</th>
+      <th>year_of_registration</th>
+      <th>gear_box</th>
+      <th>power_ps</th>
+      <th>model</th>
+      <th>odometer</th>
+      <th>month_of_registration</th>
+      <th>fuel_type</th>
+      <th>brand</th>
+      <th>not_repaired_damage</th>
+      <th>date_created</th>
+      <th>nr_of_pictures</th>
+      <th>postal_code</th>
+      <th>last_seen</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>count</th>
+      <td>50000</td>
+      <td>50000</td>
+      <td>50000</td>
+      <td>50000</td>
+      <td>50000</td>
+      <td>50000</td>
+      <td>44905</td>
+      <td>50000.000000</td>
+      <td>47320</td>
+      <td>50000.000000</td>
+      <td>47242</td>
+      <td>50000</td>
+      <td>50000.000000</td>
+      <td>45518</td>
+      <td>50000</td>
+      <td>40171</td>
+      <td>50000</td>
+      <td>50000.0</td>
+      <td>50000.000000</td>
+      <td>50000</td>
+    </tr>
+    <tr>
+      <th>unique</th>
+      <td>48213</td>
+      <td>38754</td>
+      <td>2</td>
+      <td>2</td>
+      <td>2357</td>
+      <td>2</td>
+      <td>8</td>
+      <td>NaN</td>
+      <td>2</td>
+      <td>NaN</td>
+      <td>245</td>
+      <td>13</td>
+      <td>NaN</td>
+      <td>7</td>
+      <td>40</td>
+      <td>2</td>
+      <td>76</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>39481</td>
+    </tr>
+    <tr>
+      <th>top</th>
+      <td>2016-03-21 16:37:21</td>
+      <td>Ford_Fiesta</td>
+      <td>privat</td>
+      <td>Angebot</td>
+      <td>$0</td>
+      <td>test</td>
+      <td>limousine</td>
+      <td>NaN</td>
+      <td>manuell</td>
+      <td>NaN</td>
+      <td>golf</td>
+      <td>150,000km</td>
+      <td>NaN</td>
+      <td>benzin</td>
+      <td>volkswagen</td>
+      <td>nein</td>
+      <td>2016-04-03 00:00:00</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>2016-04-07 06:17:27</td>
+    </tr>
+    <tr>
+      <th>freq</th>
+      <td>3</td>
+      <td>78</td>
+      <td>49999</td>
+      <td>49999</td>
+      <td>1421</td>
+      <td>25756</td>
+      <td>12859</td>
+      <td>NaN</td>
+      <td>36993</td>
+      <td>NaN</td>
+      <td>4024</td>
+      <td>32424</td>
+      <td>NaN</td>
+      <td>30107</td>
+      <td>10687</td>
+      <td>35232</td>
+      <td>1946</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <th>mean</th>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>2005.073280</td>
+      <td>NaN</td>
+      <td>116.355920</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>5.723360</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>0.0</td>
+      <td>50813.627300</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>std</th>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>105.712813</td>
+      <td>NaN</td>
+      <td>209.216627</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>3.711984</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>0.0</td>
+      <td>25779.747957</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>min</th>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>1000.000000</td>
+      <td>NaN</td>
+      <td>0.000000</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>0.000000</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>0.0</td>
+      <td>1067.000000</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>25%</th>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>1999.000000</td>
+      <td>NaN</td>
+      <td>70.000000</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>3.000000</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>0.0</td>
+      <td>30451.000000</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>50%</th>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>2003.000000</td>
+      <td>NaN</td>
+      <td>105.000000</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>6.000000</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>0.0</td>
+      <td>49577.000000</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>75%</th>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>2008.000000</td>
+      <td>NaN</td>
+      <td>150.000000</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>9.000000</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>0.0</td>
+      <td>71540.000000</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>max</th>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>9999.000000</td>
+      <td>NaN</td>
+      <td>17700.000000</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>12.000000</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>0.0</td>
+      <td>99998.000000</td>
+      <td>NaN</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Observe that the columns <strong>seller</strong>, <strong>offer_type</strong>, <strong>abtest</strong>, <strong>gear_box</strong>, <strong>not_repaired_damage</strong> have only two distinct values, so they can be dropped.</p>
+<p>The <strong>price</strong> and <strong>odometer</strong> columns are numeric values stored at text. For each column:</p>
+<ul>
+<li>Remove any non-numeric characters.</li>
+<li>Convert the column to a numeric dtype.</li>
+<li>Use DataFrame.rename() to rename the <strong>odometer</strong> column to <strong>odometer_km</strong>.</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[11]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#remove the &#39;$&#39; sign from price</span>
+<span class="n">autos</span><span class="p">[</span><span class="s1">&#39;price&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">autos</span><span class="p">[</span><span class="s1">&#39;price&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot;$&quot;</span><span class="p">,</span><span class="s2">&quot;&quot;</span><span class="p">)</span>
+<span class="c1">#remove &quot;,&quot; from price</span>
+<span class="n">autos</span><span class="p">[</span><span class="s1">&#39;price&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">autos</span><span class="p">[</span><span class="s1">&#39;price&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot;,&quot;</span><span class="p">,</span><span class="s2">&quot;&quot;</span><span class="p">)</span>
+<span class="c1">#convert to float type</span>
+<span class="n">autos</span><span class="p">[</span><span class="s1">&#39;price&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">autos</span><span class="p">[</span><span class="s1">&#39;price&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">float</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[12]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#remove &#39;km&#39; from odometer</span>
+<span class="n">autos</span><span class="p">[</span><span class="s1">&#39;odometer&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">autos</span><span class="p">[</span><span class="s1">&#39;odometer&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot;km&quot;</span><span class="p">,</span><span class="s2">&quot;&quot;</span><span class="p">)</span>
+<span class="c1">#remove &#39;,&#39; from odometer</span>
+<span class="n">autos</span><span class="p">[</span><span class="s1">&#39;odometer&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">autos</span><span class="p">[</span><span class="s1">&#39;odometer&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot;,&quot;</span><span class="p">,</span><span class="s2">&quot;&quot;</span><span class="p">)</span>
+<span class="c1">#convert to float type</span>
+<span class="n">autos</span><span class="p">[</span><span class="s1">&#39;odometer&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">autos</span><span class="p">[</span><span class="s1">&#39;odometer&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">float</span><span class="p">)</span>
+<span class="c1">#rename odometer to odometer_km</span>
+<span class="n">autos</span><span class="o">.</span><span class="n">rename</span><span class="p">({</span><span class="s1">&#39;odometer&#39;</span><span class="p">:</span><span class="s1">&#39;odometer_km&#39;</span><span class="p">},</span> <span class="n">axis</span> <span class="o">=</span> <span class="mi">1</span><span class="p">,</span><span class="n">inplace</span> <span class="o">=</span> <span class="kc">True</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[13]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#check the info again</span>
+<span class="n">autos</span><span class="o">.</span><span class="n">info</span><span class="p">()</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>&lt;class &#39;pandas.core.frame.DataFrame&#39;&gt;
+RangeIndex: 50000 entries, 0 to 49999
+Data columns (total 20 columns):
+date_crawled             50000 non-null object
+name                     50000 non-null object
+seller                   50000 non-null object
+offer_type               50000 non-null object
+price                    50000 non-null float64
+abtest                   50000 non-null object
+vehicle_type             44905 non-null object
+year_of_registration     50000 non-null int64
+gear_box                 47320 non-null object
+power_ps                 50000 non-null int64
+model                    47242 non-null object
+odometer_km              50000 non-null float64
+month_of_registration    50000 non-null int64
+fuel_type                45518 non-null object
+brand                    50000 non-null object
+not_repaired_damage      40171 non-null object
+date_created             50000 non-null object
+nr_of_pictures           50000 non-null int64
+postal_code              50000 non-null int64
+last_seen                50000 non-null object
+dtypes: float64(2), int64(5), object(13)
+memory usage: 7.6+ MB
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Let's explore the odometer_km feature</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[14]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">autos</span><span class="p">[</span><span class="s1">&#39;odometer_km&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">describe</span><span class="p">()</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt output_prompt">Out[14]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>count     50000.000000
+mean     125732.700000
+std       40042.211706
+min        5000.000000
+25%      125000.000000
+50%      150000.000000
+75%      150000.000000
+max      150000.000000
+Name: odometer_km, dtype: float64</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[15]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">autos</span><span class="p">[</span><span class="s1">&#39;odometer_km&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span><span class="o">.</span><span class="n">sort_index</span><span class="p">(</span><span class="n">ascending</span> <span class="o">=</span> <span class="kc">False</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt output_prompt">Out[15]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>150000.0    32424
+125000.0     5170
+100000.0     2169
+90000.0      1757
+80000.0      1436
+70000.0      1230
+60000.0      1164
+50000.0      1027
+40000.0       819
+30000.0       789
+20000.0       784
+10000.0       264
+5000.0        967
+Name: odometer_km, dtype: int64</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[16]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">autos</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">column</span> <span class="o">=</span> <span class="s1">&#39;odometer_km&#39;</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt output_prompt">Out[16]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>array([[&lt;matplotlib.axes._subplots.AxesSubplot object at 0x7f3cc3fe7630&gt;]],
+      dtype=object)</pre>
+</div>
+
+</div>
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+
+
+<div class="output_png output_subarea ">
+<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAgYAAAFhCAYAAAALJmLfAAAABHNCSVQICAgIfAhkiAAAAAlwSFlz
+AAALEgAACxIB0t1+/AAAIABJREFUeJzt3X1UlXW+///XBmzGBERks3HkHKaRnFyT2DSVaEqGuAkQ
+ASe04zqm4mR1KtSUJuykVouZvjljzhrXmdDjnFnVnDm/FgrdiDeJlVrqOTUzUWZr0mLQlA3KTYAK
+Ap/fHy4/E6kB3rDZ2+fjL/ns69r7/dpYvriua184jDFGAAAAkgK8PQAAAOg7KAYAAMCiGAAAAIti
+AAAALIoBAACwKAYAAMCiGAAAAItiAPio4uJizZgxw9tjXFarV69WXl6et8cArmoUA8CHORyOXn/N
+/Px8/eY3v7liz++NTAD+gWIAoFe1t7d7ewQA34JiAPQxBw8e1MyZM3XrrbcqPT1d27dvlyTV19fr
+gQce0E9+8hNNmzZNlZWVnfb785//rLvvvlu33nqrsrOz9Ze//MU+NnPmTK1atUr33HOPfvzjH+vB
+Bx9UXV2dFi9erJ/85CfKzs7WkSNHOs2Qk5Oj0aNHKyUlRZs2bZIkvfLKK3r99df1n//5n7r55pv1
+4IMPSpKqq6uVm5urMWPGKCkpSS+99JJ9rtWrVys3N1d5eXm65ZZbVFxc3K33oa2tTY8++qhyc3PV
+1tam1atXa/78+crLy9PNN9+sKVOmqKKiQmvWrNHYsWOVmJio99577+LedAD/YAD0GadPnzaTJk0y
+hYWF5vTp02b37t3m5ptvNp9//rlZsGCBWbBggTl16pT529/+ZsaPH29mzJhhjDGmvr7e3Hrrrea1
+114z7e3t5o033jC33nqrqa+vN8YY86//+q/G7XabQ4cOmcbGRpOammrcbrfZvXu3aW9vN4899pjJ
+z883xhhz4sQJc8cdd5ji4mLT0dFh9u/fb0aPHm0OHDhgjDHm8ccfN6tWrbIzd3R0mKysLPMf//Ef
+pq2tzRw6dMgkJSWZXbt2GWOM+e1vf2t+9KMfmbKyMmOMMS0tLRfM/9vf/tbk5eWZU6dOmXnz5pn8
+/HzT0dFhH4uLizPvvvuunfnOO+80L7zwgmlrazOvvPKKSUxMvMzfEeDqwxEDoA/561//qhMnTmje
+vHkKCgpSfHy8JkyYoNdee01vvvmm5s+fr+985zu6/vrrlZWVZfd7++239f3vf1/p6ekKCAhQWlqa
+fvCDH+itt96y20ydOlXR0dEKDg5WQkKCYmJiFB8fr4CAAN11113av3+/JOmtt95SdHS0MjMz5XA4
+dMMNN8jtdmvz5s3nnfmjjz5SfX29HnzwQQUGBio6OlrZ2dnauHGj3ebHP/6xEhMTJUnXXHPNt74H
+jY2N+tnPfqaYmBj94he/6HTNwS233KKxY8famevr6zVv3jwFBgYqNTVVR44cUVNTU8/feABWkLcH
+APAP1dXVGjJkSKe1733vezp27Jja29sVFRXVaf3r+33967OPezwe+/XgwYPtn7/zne90+vq73/2u
+Tpw4IUk6cuSI/vrXv+q2226TJBlj1N7erszMzPPO/OWXX8rj8XTavqOjQ7feeqvd5utzd+XDDz9U
+e3u7Vq5cec5j35x50KBBtjh897vflTFGzc3NCg4O7vbrAeiMYgD0IZGRkTp69GintSNHjuif//mf
+FRgYqKNHj+q6666z61/fb+vWrefsl5CQ0OMZhgwZotGjR2vdunXd3j46Olpbtmy54DY9+aTBuHHj
+9MMf/lCzZs3SSy+91KkMALjyOJUA9CGjRo1S//79tXbtWrW1tWnv3r16++23NWXKFLndbq1evVqn
+Tp3SgQMHVFJSYve744479Pe//10bN25Ue3u7SktL9fnnn+vOO+/s8QwTJkzQF198oVdffVVtbW06
+ffq0PvroI33++eeSpIiICB06dMhuHxcXpwEDBmjt2rVqaWlRe3u7PvvsM3300UcX/T7MnTtXkydP
+1uzZs1VXV3fRzwOg57osBq2trcrOzlZmZqbS0tLs4b3Vq1crISFBWVlZysrK0o4dO+w+hYWFcrvd
+SklJ0a5du+z6vn37lJ6eruTkZBUUFHR6jYULF8rtdmv69OmdfhICrib9+vXTCy+8oB07dig+Pl7P
+PPOMnnvuOV133XX693//dzU3N2vcuHFasmSJfvrTn9r9wsLC9MILL2jdunWKj4/XunXrVFhYqIED
+B0rq2U/sAwYM0O9//3uVlpZq/PjxGj9+vH7961+rtbVVknT33XfrwIEDuu222/Twww8rICBAhYWF
++vTTTzVx4kSNHTtWTz755CWf6/+3f/s3TZw4UTk5Ofrqq6+6tQ/3QAAuncMYY7ra6OTJk+rfv7/a
+29v1L//yL/r5z3+u3bt3a8CAAZozZ06nbQ8ePKhFixapqKhIVVVVmjNnjrZu3SqHw6Hs7Gw9+eST
+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
+"
+>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Let's explore the price column</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[17]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">autos</span><span class="p">[</span><span class="s1">&#39;price&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">describe</span><span class="p">()</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt output_prompt">Out[17]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>count    5.000000e+04
+mean     9.840044e+03
+std      4.811044e+05
+min      0.000000e+00
+25%      1.100000e+03
+50%      2.950000e+03
+75%      7.200000e+03
+max      1.000000e+08
+Name: price, dtype: float64</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[18]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">autos</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">column</span> <span class="o">=</span> <span class="s1">&#39;price&#39;</span><span class="p">,</span> <span class="n">bins</span> <span class="o">=</span> <span class="mi">100</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt output_prompt">Out[18]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>array([[&lt;matplotlib.axes._subplots.AxesSubplot object at 0x7f3cc46d79b0&gt;]],
+      dtype=object)</pre>
+</div>
+
+</div>
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+
+
+<div class="output_png output_subarea ">
+<img src="data:image/png;base64,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
+"
+>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[19]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">autos</span><span class="p">[</span><span class="s1">&#39;price&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt output_prompt">Out[19]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>0.0       1421
+500.0      781
+1500.0     734
+2500.0     643
+1200.0     639
+1000.0     639
+600.0      531
+800.0      498
+3500.0     498
+2000.0     460
+Name: price, dtype: int64</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[20]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#drop the row with price = 0</span>
+<span class="n">autos</span> <span class="o">=</span> <span class="n">autos</span><span class="p">[</span><span class="n">autos</span><span class="p">[</span><span class="s1">&#39;price&#39;</span><span class="p">]</span><span class="o">&gt;</span><span class="mi">0</span><span class="p">]</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[21]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">autos</span><span class="p">[</span><span class="s1">&#39;price&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">describe</span><span class="p">()</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt output_prompt">Out[21]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>count    4.857900e+04
+mean     1.012788e+04
+std      4.880873e+05
+min      1.000000e+00
+25%      1.200000e+03
+50%      3.000000e+03
+75%      7.490000e+03
+max      1.000000e+08
+Name: price, dtype: float64</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Now let's move on to the date column</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>There are three columns that contains date <strong>date_crawled</strong>, <strong>last_seen</strong>, and <strong>ad_created</strong>.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Let's first look at the <strong>date_crawled</strong> feature</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[22]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#normalize = True means we use frequency instead of count</span>
+<span class="c1">#dropna means we also include missing values</span>
+<span class="n">autos</span><span class="p">[</span><span class="s1">&#39;date_crawled&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="p">[:</span><span class="mi">10</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">(</span><span class="n">normalize</span> <span class="o">=</span> <span class="kc">True</span><span class="p">,</span><span class="n">dropna</span> <span class="o">=</span> <span class="kc">False</span><span class="p">)</span><span class="o">.</span><span class="n">sort_index</span><span class="p">()</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt output_prompt">Out[22]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>2016-03-05    0.025320
+2016-03-06    0.014039
+2016-03-07    0.036003
+2016-03-08    0.033327
+2016-03-09    0.033101
+2016-03-10    0.032174
+2016-03-11    0.032566
+2016-03-12    0.036930
+2016-03-13    0.015665
+2016-03-14    0.036538
+2016-03-15    0.034274
+2016-03-16    0.029601
+2016-03-17    0.031639
+2016-03-18    0.012907
+2016-03-19    0.034768
+2016-03-20    0.037876
+2016-03-21    0.037403
+2016-03-22    0.033018
+2016-03-23    0.032216
+2016-03-24    0.029334
+2016-03-25    0.031598
+2016-03-26    0.032195
+2016-03-27    0.031083
+2016-03-28    0.034850
+2016-03-29    0.034130
+2016-03-30    0.033677
+2016-03-31    0.031845
+2016-04-01    0.033677
+2016-04-02    0.035468
+2016-04-03    0.038597
+2016-04-04    0.036518
+2016-04-05    0.013092
+2016-04-06    0.003170
+2016-04-07    0.001400
+Name: date_crawled, dtype: float64</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Now the <strong>last_seen</strong> feature</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[23]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">autos</span><span class="p">[</span><span class="s1">&#39;last_seen&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="p">[:</span><span class="mi">10</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">(</span><span class="n">normalize</span> <span class="o">=</span> <span class="kc">True</span><span class="p">,</span> <span class="n">dropna</span> <span class="o">=</span> <span class="kc">False</span><span class="p">)</span><span class="o">.</span><span class="n">sort_index</span><span class="p">()</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt output_prompt">Out[23]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>2016-03-05    0.001070
+2016-03-06    0.004323
+2016-03-07    0.005393
+2016-03-08    0.007431
+2016-03-09    0.009613
+2016-03-10    0.010663
+2016-03-11    0.012372
+2016-03-12    0.023796
+2016-03-13    0.008893
+2016-03-14    0.012598
+2016-03-15    0.015871
+2016-03-16    0.016447
+2016-03-17    0.028078
+2016-03-18    0.007349
+2016-03-19    0.015830
+2016-03-20    0.020647
+2016-03-21    0.020647
+2016-03-22    0.021367
+2016-03-23    0.018527
+2016-03-24    0.019762
+2016-03-25    0.019206
+2016-03-26    0.016797
+2016-03-27    0.015645
+2016-03-28    0.020873
+2016-03-29    0.022355
+2016-03-30    0.024764
+2016-03-31    0.023796
+2016-04-01    0.022788
+2016-04-02    0.024928
+2016-04-03    0.025196
+2016-04-04    0.024476
+2016-04-05    0.124766
+2016-04-06    0.221824
+2016-04-07    0.131909
+Name: last_seen, dtype: float64</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Now the <strong>year_of_registration</strong> feature</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[24]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">autos</span><span class="p">[</span><span class="s1">&#39;year_of_registration&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">describe</span><span class="p">()</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt output_prompt">Out[24]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>count    48579.000000
+mean      2004.753000
+std         88.631663
+min       1000.000000
+25%       1999.000000
+50%       2004.000000
+75%       2008.000000
+max       9999.000000
+Name: year_of_registration, dtype: float64</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Observe that the <strong>year_of_registration</strong> feature contains some odd values</p>
+<ul>
+<li>The minimum value is 1000, before cars were invented.</li>
+<li>The maximum value is 9999, many years into the future</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[25]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">autos</span><span class="p">[</span><span class="s1">&#39;year_of_registration&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">(</span><span class="n">normalize</span> <span class="o">=</span> <span class="kc">True</span><span class="p">)</span><span class="o">.</span><span class="n">sort_index</span><span class="p">()</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt output_prompt">Out[25]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>1000    0.000021
+1001    0.000021
+1111    0.000021
+1800    0.000041
+1910    0.000103
+1927    0.000021
+1929    0.000021
+1931    0.000021
+1934    0.000041
+1937    0.000082
+1938    0.000021
+1939    0.000021
+1941    0.000041
+1943    0.000021
+1948    0.000021
+1950    0.000062
+1951    0.000041
+1952    0.000021
+1953    0.000021
+1954    0.000041
+1955    0.000041
+1956    0.000082
+1957    0.000041
+1958    0.000082
+1959    0.000124
+1960    0.000494
+1961    0.000124
+1962    0.000082
+1963    0.000165
+1964    0.000247
+          ...   
+2000    0.064966
+2001    0.054283
+2002    0.051174
+2003    0.055559
+2004    0.055641
+2005    0.060438
+2006    0.054983
+2007    0.046872
+2008    0.045596
+2009    0.042940
+2010    0.032710
+2011    0.033409
+2012    0.026966
+2013    0.016530
+2014    0.013668
+2015    0.008069
+2016    0.025114
+2017    0.028675
+2018    0.009696
+2019    0.000041
+2800    0.000021
+4100    0.000021
+4500    0.000021
+4800    0.000021
+5000    0.000082
+5911    0.000021
+6200    0.000021
+8888    0.000021
+9000    0.000021
+9999    0.000062
+Name: year_of_registration, Length: 95, dtype: float64</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>We choose the registration_year between 1910 and 2016</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[26]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#restrict the year of registration to be between 1910 and 2016</span>
+<span class="n">autos</span> <span class="o">=</span> <span class="n">autos</span><span class="p">[(</span><span class="n">autos</span><span class="p">[</span><span class="s1">&#39;year_of_registration&#39;</span><span class="p">]</span><span class="o">&gt;=</span><span class="mi">1910</span><span class="p">)</span><span class="o">&amp;</span><span class="p">(</span><span class="n">autos</span><span class="p">[</span><span class="s1">&#39;year_of_registration&#39;</span><span class="p">]</span><span class="o">&lt;=</span><span class="mi">2016</span><span class="p">)]</span> 
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[27]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#investigate the distributrion of year of registration again</span>
+<span class="n">autos</span><span class="p">[</span><span class="s1">&#39;year_of_registration&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">(</span><span class="n">normalize</span> <span class="o">=</span> <span class="kc">True</span><span class="p">)</span><span class="o">.</span><span class="n">sort_index</span><span class="p">()</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt output_prompt">Out[27]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>1910    0.000107
+1927    0.000021
+1929    0.000021
+1931    0.000021
+1934    0.000043
+1937    0.000086
+1938    0.000021
+1939    0.000021
+1941    0.000043
+1943    0.000021
+1948    0.000021
+1950    0.000064
+1951    0.000043
+1952    0.000021
+1953    0.000021
+1954    0.000043
+1955    0.000043
+1956    0.000086
+1957    0.000043
+1958    0.000086
+1959    0.000128
+1960    0.000514
+1961    0.000128
+1962    0.000086
+1963    0.000171
+1964    0.000257
+1965    0.000364
+1966    0.000471
+1967    0.000557
+1968    0.000557
+          ...   
+1987    0.001542
+1988    0.002891
+1989    0.003726
+1990    0.007432
+1991    0.007260
+1992    0.007946
+1993    0.009102
+1994    0.013471
+1995    0.026299
+1996    0.029405
+1997    0.041784
+1998    0.050607
+1999    0.062086
+2000    0.067590
+2001    0.056475
+2002    0.053241
+2003    0.057803
+2004    0.057889
+2005    0.062879
+2006    0.057203
+2007    0.048765
+2008    0.047438
+2009    0.044675
+2010    0.034031
+2011    0.034759
+2012    0.028056
+2013    0.017197
+2014    0.014221
+2015    0.008395
+2016    0.026128
+Name: year_of_registration, Length: 78, dtype: float64</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Now let's explore the <strong>brand</strong> column</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[28]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#get the top 20 brands</span>
+<span class="n">top20</span> <span class="o">=</span> <span class="n">autos</span><span class="p">[</span><span class="s1">&#39;brand&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">20</span><span class="p">)</span><span class="o">.</span><span class="n">index</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[29]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#find the mean price of the top 20 brands</span>
+<span class="n">top_brand</span> <span class="o">=</span> <span class="p">{}</span>
+<span class="k">for</span> <span class="n">brand</span> <span class="ow">in</span> <span class="n">top20</span><span class="p">:</span>
+    <span class="n">top</span> <span class="o">=</span> <span class="n">autos</span><span class="p">[</span><span class="n">autos</span><span class="p">[</span><span class="s1">&#39;brand&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="n">brand</span><span class="p">]</span>
+    <span class="n">top_brand</span><span class="p">[</span><span class="n">brand</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">top</span><span class="p">[</span><span class="s1">&#39;price&#39;</span><span class="p">])</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[30]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">top_brand</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt output_prompt">Out[30]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>{&#39;audi&#39;: 9336.687453600594,
+ &#39;bmw&#39;: 8571.480147917478,
+ &#39;citroen&#39;: 45486.68549618321,
+ &#39;fiat&#39;: 2813.748538011696,
+ &#39;ford&#39;: 7456.547932618683,
+ &#39;hyundai&#39;: 5365.254273504273,
+ &#39;mazda&#39;: 4112.596614950635,
+ &#39;mercedes_benz&#39;: 30829.021092362345,
+ &#39;mini&#39;: 10613.459657701711,
+ &#39;nissan&#39;: 4743.40252454418,
+ &#39;opel&#39;: 5432.479195699781,
+ &#39;peugeot&#39;: 3094.0172290021537,
+ &#39;renault&#39;: 2474.8646069968195,
+ &#39;seat&#39;: 4397.230949589683,
+ &#39;skoda&#39;: 6368.0,
+ &#39;smart&#39;: 3580.2239031770046,
+ &#39;sonstige_autos&#39;: 45208.36442516269,
+ &#39;toyota&#39;: 5167.091062394604,
+ &#39;volkswagen&#39;: 6729.81956411556,
+ &#39;volvo&#39;: 4946.501170960188}</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[34]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">autos</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;brand&#39;</span><span class="p">)[</span><span class="s1">&#39;price&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">ascending</span> <span class="o">=</span> <span class="kc">False</span><span class="p">)</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">20</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt output_prompt">Out[34]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>brand
+porsche           45643.937063
+citroen           45486.685496
+sonstige_autos    45208.364425
+mercedes_benz     30829.021092
+land_rover        19108.091837
+jeep              11650.500000
+jaguar            11635.493151
+mini              10613.459658
+audi               9336.687454
+bmw                8571.480148
+ford               7456.547933
+volkswagen         6729.819564
+chevrolet          6684.139098
+skoda              6368.000000
+kia                5982.330303
+dacia              5915.528455
+opel               5432.479196
+hyundai            5365.254274
+toyota             5167.091062
+volvo              4946.501171
+Name: price, dtype: float64</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[36]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#convert top 20 brands and their mean prices to a dataframe</span>
+<span class="n">mean_price</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">(</span><span class="n">top_brand</span><span class="p">)</span>
+<span class="n">top20</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">mean_price</span><span class="p">,</span> <span class="n">columns</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;mean_price&#39;</span><span class="p">])</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[37]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">top20</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt output_prompt">Out[37]:</div>
+
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>mean_price</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>audi</th>
+      <td>9336.687454</td>
+    </tr>
+    <tr>
+      <th>bmw</th>
+      <td>8571.480148</td>
+    </tr>
+    <tr>
+      <th>citroen</th>
+      <td>45486.685496</td>
+    </tr>
+    <tr>
+      <th>fiat</th>
+      <td>2813.748538</td>
+    </tr>
+    <tr>
+      <th>ford</th>
+      <td>7456.547933</td>
+    </tr>
+    <tr>
+      <th>hyundai</th>
+      <td>5365.254274</td>
+    </tr>
+    <tr>
+      <th>mazda</th>
+      <td>4112.596615</td>
+    </tr>
+    <tr>
+      <th>mercedes_benz</th>
+      <td>30829.021092</td>
+    </tr>
+    <tr>
+      <th>mini</th>
+      <td>10613.459658</td>
+    </tr>
+    <tr>
+      <th>nissan</th>
+      <td>4743.402525</td>
+    </tr>
+    <tr>
+      <th>opel</th>
+      <td>5432.479196</td>
+    </tr>
+    <tr>
+      <th>peugeot</th>
+      <td>3094.017229</td>
+    </tr>
+    <tr>
+      <th>renault</th>
+      <td>2474.864607</td>
+    </tr>
+    <tr>
+      <th>seat</th>
+      <td>4397.230950</td>
+    </tr>
+    <tr>
+      <th>skoda</th>
+      <td>6368.000000</td>
+    </tr>
+    <tr>
+      <th>smart</th>
+      <td>3580.223903</td>
+    </tr>
+    <tr>
+      <th>sonstige_autos</th>
+      <td>45208.364425</td>
+    </tr>
+    <tr>
+      <th>toyota</th>
+      <td>5167.091062</td>
+    </tr>
+    <tr>
+      <th>volkswagen</th>
+      <td>6729.819564</td>
+    </tr>
+    <tr>
+      <th>volvo</th>
+      <td>4946.501171</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[38]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#compute mean mileage</span>
+<span class="n">mileage</span> <span class="o">=</span> <span class="p">{}</span>
+<span class="k">for</span> <span class="n">brand</span> <span class="ow">in</span> <span class="n">top_brand</span><span class="p">:</span>
+    <span class="n">top</span> <span class="o">=</span> <span class="n">autos</span><span class="p">[</span><span class="n">autos</span><span class="p">[</span><span class="s1">&#39;brand&#39;</span><span class="p">]</span><span class="o">==</span><span class="n">brand</span><span class="p">]</span>
+    <span class="n">mileage</span><span class="p">[</span><span class="n">brand</span><span class="p">]</span> <span class="o">=</span> <span class="n">top</span><span class="p">[</span><span class="s1">&#39;odometer_km&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
+    
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[39]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#convert mileage to a series</span>
+<span class="n">mileage</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">(</span><span class="n">mileage</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[40]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#add mileage to the top20 dataframe</span>
+<span class="n">top20</span><span class="p">[</span><span class="s1">&#39;mean_mileage&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">mileage</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[41]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">top20</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>                  mean_price   mean_mileage
+audi             9336.687454  129157.386785
+bmw              8571.480148  132575.905021
+citroen         45486.685496  119572.519084
+fiat             2813.748538  117121.971596
+ford             7456.547933  124243.491577
+hyundai          5365.254274  106442.307692
+mazda            4112.596615  124464.033850
+mercedes_benz   30829.021092  130792.628774
+mini            10613.459658   88105.134474
+nissan           4743.402525  118330.995792
+opel             5432.479196  129314.154888
+peugeot          3094.017229  127153.625269
+renault          2474.864607  128071.331213
+seat             4397.230950  121131.301290
+skoda            6368.000000  110848.563969
+smart            3580.223903   99326.777610
+sonstige_autos  45208.364425   89707.158351
+toyota           5167.091062  115944.350759
+volkswagen       6729.819564  128713.634060
+volvo            4946.501171  138067.915691
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[42]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">top20</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">by</span> <span class="o">=</span> <span class="s1">&#39;mean_price&#39;</span><span class="p">,</span> <span class="n">ascending</span> <span class="o">=</span> <span class="kc">False</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt output_prompt">Out[42]:</div>
+
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>mean_price</th>
+      <th>mean_mileage</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>citroen</th>
+      <td>45486.685496</td>
+      <td>119572.519084</td>
+    </tr>
+    <tr>
+      <th>sonstige_autos</th>
+      <td>45208.364425</td>
+      <td>89707.158351</td>
+    </tr>
+    <tr>
+      <th>mercedes_benz</th>
+      <td>30829.021092</td>
+      <td>130792.628774</td>
+    </tr>
+    <tr>
+      <th>mini</th>
+      <td>10613.459658</td>
+      <td>88105.134474</td>
+    </tr>
+    <tr>
+      <th>audi</th>
+      <td>9336.687454</td>
+      <td>129157.386785</td>
+    </tr>
+    <tr>
+      <th>bmw</th>
+      <td>8571.480148</td>
+      <td>132575.905021</td>
+    </tr>
+    <tr>
+      <th>ford</th>
+      <td>7456.547933</td>
+      <td>124243.491577</td>
+    </tr>
+    <tr>
+      <th>volkswagen</th>
+      <td>6729.819564</td>
+      <td>128713.634060</td>
+    </tr>
+    <tr>
+      <th>skoda</th>
+      <td>6368.000000</td>
+      <td>110848.563969</td>
+    </tr>
+    <tr>
+      <th>opel</th>
+      <td>5432.479196</td>
+      <td>129314.154888</td>
+    </tr>
+    <tr>
+      <th>hyundai</th>
+      <td>5365.254274</td>
+      <td>106442.307692</td>
+    </tr>
+    <tr>
+      <th>toyota</th>
+      <td>5167.091062</td>
+      <td>115944.350759</td>
+    </tr>
+    <tr>
+      <th>volvo</th>
+      <td>4946.501171</td>
+      <td>138067.915691</td>
+    </tr>
+    <tr>
+      <th>nissan</th>
+      <td>4743.402525</td>
+      <td>118330.995792</td>
+    </tr>
+    <tr>
+      <th>seat</th>
+      <td>4397.230950</td>
+      <td>121131.301290</td>
+    </tr>
+    <tr>
+      <th>mazda</th>
+      <td>4112.596615</td>
+      <td>124464.033850</td>
+    </tr>
+    <tr>
+      <th>smart</th>
+      <td>3580.223903</td>
+      <td>99326.777610</td>
+    </tr>
+    <tr>
+      <th>peugeot</th>
+      <td>3094.017229</td>
+      <td>127153.625269</td>
+    </tr>
+    <tr>
+      <th>fiat</th>
+      <td>2813.748538</td>
+      <td>117121.971596</td>
+    </tr>
+    <tr>
+      <th>renault</th>
+      <td>2474.864607</td>
+      <td>128071.331213</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+ 
+
+</p>
             </div>
             <!-- /.entry-content -->
 <section class="well" id="related-posts">
-    <h4>Part 1 of the example-post-series series</h4>
-       <h5>Next articles</h5>
-       <ul>
-           <li><a href="https://huanvo88.github.io/huanblog/second-post.html">First Post-Part 2</a></li>
-           <li><a href="https://huanvo88.github.io/huanblog/third-post.html">First Post-Part 3</a></li>
-           <li><a href="https://huanvo88.github.io/huanblog/fourth-post.html">First Post-Part 4</a></li>
-       </ul>
+    <h4>Part 1 of the data-science-post-series series</h4>
 </section>
         </article>
     </section>
@@ -312,27 +4504,27 @@ Huan's Blog            </a>
 <li class="list-group-item">
   <h4><i class="fa fa-home fa-lg"></i><span class="icon-label">Social</span></h4>
   <ul class="list-group" id="social">
-    <li class="list-group-item"><a href="#"><i class="fa fa-you-can-add-links-in-your-config-file-square fa-lg"></i> You can add links in your config file</a></li>
-    <li class="list-group-item"><a href="#"><i class="fa fa-another-social-link-square fa-lg"></i> Another social link</a></li>
+    <li class="list-group-item"><a href="https://www.linkedin.com/in/huan-vo-5b783b128/"><i class="fa fa-linkedin-square fa-lg"></i> linkedin</a></li>
+    <li class="list-group-item"><a href="https://github.com/huanvo88/Projects"><i class="fa fa-github-square fa-lg"></i> github</a></li>
   </ul>
 </li>
 <!-- End Sidebar/Social -->
 
 <!-- Sidebar/Tag Cloud -->
 <li class="list-group-item">
-  <a href="https://huanvo88.github.io/huanblog/"><h4><i class="fa fa-tags fa-lg"></i><span class="icon-label">Tags</span></h4></a>
+  <a href="./"><h4><i class="fa fa-tags fa-lg"></i><span class="icon-label">Tags</span></h4></a>
   <ul class="list-group " id="tags">
-    <li class="list-group-item tag-1">
-      <a href="https://huanvo88.github.io/huanblog/tag/python.html">python</a>
-    </li>
-    <li class="list-group-item tag-1">
-      <a href="https://huanvo88.github.io/huanblog/tag/blog.html">blog</a>
-    </li>
-    <li class="list-group-item tag-1">
-      <a href="https://huanvo88.github.io/huanblog/tag/pelican.html">pelican</a>
+    <li class="list-group-item tag-4">
+      <a href="./tag/python.html">python</a>
     </li>
     <li class="list-group-item tag-4">
-      <a href="https://huanvo88.github.io/huanblog/tag/tables.html">tables</a>
+      <a href="./tag/eda.html">EDA</a>
+    </li>
+    <li class="list-group-item tag-4">
+      <a href="./tag/pandas.html">pandas</a>
+    </li>
+    <li class="list-group-item tag-4">
+      <a href="./tag/matplotlib.html">matplotlib</a>
     </li>
   </ul>
 </li>
@@ -343,16 +4535,13 @@ Huan's Blog            </a>
   <h4><i class="fa fa-external-link-square fa-lg"></i><span class="icon-label">Links</span></h4>
   <ul class="list-group" id="links">
     <li class="list-group-item">
-      <a href="http://getpelican.com/" target="_blank">Pelican</a>
+      <a href="https://www.dataquest.io/blog/" target="_blank">Dataquest Blog</a>
     </li>
     <li class="list-group-item">
-      <a href="http://python.org/" target="_blank">Python.org</a>
+      <a href="https://medium.com/towards-data-science/data-science/home" target="_blank">Towards Data Science</a>
     </li>
     <li class="list-group-item">
-      <a href="http://jinja.pocoo.org/" target="_blank">Jinja2</a>
-    </li>
-    <li class="list-group-item">
-      <a href="#" target="_blank">You can modify those links in your config file</a>
+      <a href="https://www.quantamagazine.org/" target="_blank">Quanta Magazine</a>
     </li>
   </ul>
 </li>
@@ -377,16 +4566,17 @@ Huan's Blog            </a>
       </div>
    </div>
 </footer>
-<script src="https://huanvo88.github.io/huanblog/theme/js/jquery.min.js"></script>
+<script src="./theme/js/jquery.min.js"></script>
 
 <!-- Include all compiled plugins (below), or include individual files as needed -->
-<script src="https://huanvo88.github.io/huanblog/theme/js/bootstrap.min.js"></script>
+<script src="./theme/js/bootstrap.min.js"></script>
 
 <!-- Enable responsive features in IE8 with Respond.js (https://github.com/scottjehl/Respond) -->
-<script src="https://huanvo88.github.io/huanblog/theme/js/respond.min.js"></script>
+<script src="./theme/js/respond.min.js"></script>
 
-    <script src="https://huanvo88.github.io/huanblog/static/js/custom.js"></script>
+    <script src="./static/js/custom.js"></script>
 
+    <script src="./theme/js/bodypadding.js"></script>
 
 <script type="text/javascript">
 jQuery(document).ready(function($) {
