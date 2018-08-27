@@ -1,0 +1,194 @@
+<html>
+<script language=JavaScript>
+
+// ****************************************************************
+// More about HandoutBrowser.js at
+//   Web := http://katlas.math.toronto.edu/drorbn/?title=HandoutBrowser.js
+// (c) Copyleft Dror Bar-Natan, 2007-2014. See
+//   http://www.math.toronto.edu/~drorbn/Copyleft/index.html
+// ****************************************************************
+
+// HandoutBrowser.js Editable Settings:
+
+// "handout_name" is the name of this handout.
+
+handout_name = "On Gassner Calculus and the Fox-Milnor Condition";
+
+// "title" is the html title of this handout, to be shown on the browser's
+// title bar.
+
+title = "Huan Vo: Fox-Milnor";
+
+// "navigation_text" is the "up navigation" text for this handout, including
+// links. It is shown on the upper left corner of the handout except when
+// hidden.
+
+ navigation_text = "<a target=_blank href = http://www.math.toronto.edu/vohuan/>Huan Vo</a>";
+//   + " | <a href=http://www.math.toronto.edu/~drorbn/>Dror Bar-Natan</a>:"
+//   + " <a href=http://www.math.toronto.edu/~drorbn/Talks/>Talks</a>:"
+//   + " <a href=http://www.math.toronto.edu/~drorbn/Talks/LesDiablerets-1708/>LesDiablerets-1708</a>:";
+
+// "slide_set" is a list of URLs of different-resolution versions of the
+// handout displayed. It is perfectly ok for slide_set to be of length 1,
+// though multiple resolutions may give better anti-aliasing performance under 
+// many circumstances. While gliding only slide_set[0] is used.
+
+var slide_set = ["PhdPresentationWeb_3.png"];
+
+// "maxX" and "maxY" define the canvas size. "step" is the quantization unit
+// for coordinates. If not set, maxX and maxY default to the width and
+// height of slide_set[0] and step defaults to 1.
+
+var maxX=16, maxY=21, step=0.001;
+
+// "views" is an array containing the sequence of views to be shown. It is
+// best created by browsing through the handout and capturing rectangles
+// with the command "c" (more information will eventually be posted at Web.)
+
+// var views = [
+//   [-0.025, 0.273, 4.015, 4.126, "Abstract"],
+//   [0, 0, 16, 21, "All"],
+//   [5.589, -0.012, 7.985, 0.75, "Thanks"],
+//   [2.164, -0.04, 5.45, 0.76, "Follows, joint with"],
+//   [-0.025, 0.273, 4.015, 4.126, "Abstract, 2"],
+//   [-0.037, 4.021, 4.032, 5.284, "KiW Abstract"],
+//   [7.948, 19.044, 16.004, 20.993, "Tables"],
+//   [-0.094, 5.23, 4.047, 9.028, "Log-Log"],
+//   [-0.011, 6.314, 2.04, 8.925, "Knots to 12"],
+//   [1.992, 6.443, 3.998, 8.943, "Torus knots"],
+//   [-0.033, 8.972, 4.027, 10.503, "Power"],
+//   [-0.029, 10.352, 4.012, 12.945, "Genus"],
+//   [-0.052, 12.481, 4.02, 18.31, "Ribbon knots"],
+//   [3.949, 0.668, 8.008, 6.134, "MMR"],
+//   [3.959, 6.009, 7.994, 9.733, "The Yang-Baxter Technique"],
+//   [3.979, 9.653, 8.004, 10.836, "Loyal Opposition"],
+//   [3.971, 10.761, 8.01, 12.321, "Moduli of Algebras"],
+//   [3.98, 12.262, 7.996, 16.662, "Solvable is good"],
+//   [3.981, 16.603, 8.01, 20.896, "Recomposing gln"],
+//   [7.936, -0.152, 11.971, 0.722, "sl2 example"],
+//   [7.949, 0.649, 11.962, 5.383, "Main gk theorem"],
+//   [7.943, 5.37, 11.944, 7.889, "Main gk lemma"],
+//   [11.959, 3.007, 16.075, 5.655, "fe sorts"],
+//   [11.981, 5.553, 16.011, 6.58, "Elf merges"],
+//   [0, 0, 16, 21, "----"],
+//   [7.428, 13.303, 7.799, 13.514, "../McGill-1702/Out1.png"],
+//   [7.055, 16.282, 7.433, 16.54, "../McGill-1702/Out3.png"]
+// ];
+
+
+var views = [  
+[0, 0, 16, 21, "All"],
+[0.301, 0.585, 4.138, 3.431, "Abstract"],
+[0.258, 3.455, 4.148, 6.312, "Ribbon knots"],
+[0.279, 4.328, 1.443, 6.037, "A ribbon singularity"],
+[1.534, 4.328, 2.598, 5.993, "A clasp singularity"],
+[2.726, 4.245, 4.137, 6.308, "A ribbon knot"],
+[0.258, 6.364, 4.16, 7.359, "Slice knots"],
+[0.215, 7.289, 4.064, 10.917, "A potential counterexample to slice-ribbon"],
+[0.253, 15.323, 4.162, 18.614, "Tangles"],
+[0.107, 18.635, 4.144, 20.709, "Crossings"],
+[4.153, 1.023, 7.992, 3.057, "The stitching operation"],
+[2.184, 15.795, 4.075, 18.589, "A stitching example"],
+[4.168, 3.045, 7.987, 7.056, "A characterization of ribbon knots"],
+[4.164, 7.06, 7.981, 9.389, "A tangle example of ribbon knots"],
+[4.172, 9.448, 8.007, 15.03, "Gamma-calculus"],
+[4.163, 15.014, 7.996, 18.294, "Properties of Gamma-calculus"],
+[0.174, 11.02, 4.139, 12.83, "The Fox-Milnor condition"],
+[0.316, 12.892, 4.168, 15.254, "Advantages of our approach"],
+[8.006, 6.493, 11.817, 10.779, "Unitary property"],
+[8.002, 10.795, 11.82, 18.125, "Proof of unitary property (sketch)"],
+[11.801, 0.188, 15.813, 10.733, "Proof of Fox-Milnor (sketch)"],
+[12.778, 19.912, 14.482, 20.824, "Thank you"]
+];
+
+// Other options:
+
+// "glide_mode" is one of
+//   {"hyperbolic", "linear", "logarithmic", "old_linear", "old_logarithmic"}:
+
+// The original proof of Fox-Milnor also applies to slice knots and so it does not answer the slice-ribbon conjecture. In contrast, our proof uses a characterization of ribbon knots which does not apply to slice knots and so it has potential for generalization. As it turns out, Gamma calculus is the simplest invariant in a series of invariants which are obtained by similar methods, and so we hope the techniques developed in this thesis can be generalized to these more powerful invariants in order to obtain a genuine condition for ribbon knots. So as it stands this thesis is a first step in a long process and there will be a lot of future directions to work on. 
+
+var glide_mode = "hyperbolic";
+
+var lower_resolution_while_gliding = false;
+
+// document.domain must be set for proper interaction with dbnvp
+// (http://katlas.math.toronto.edu/drorbn/index.php?title=Dbnvp). If you
+// don't know what that is, you can safely ignore this line.
+
+// document.domain = "math.toronto.edu";
+
+// ***************************************************************
+// End HandoutBrowser.js Editable Settings
+// Unless you know what you are doing, it is best not to touch the
+// rest of this file.
+// ***************************************************************
+
+</script>
+
+<head>
+  <link rel="stylesheet" type="text/css" href="/~drorbn/global.css">
+  <script language=JavaScript>
+    document.write("<title>"+title+"</title>");
+  </script>
+</head>
+
+<body leftmargin="0" topmargin="0" marginwidth="0" marginheight="0"
+  onkeydown="keypressed(event)" onkeypress="keypressed(event)"
+  onload="loaded()" onresize="resized()" style="overflow: hidden;"
+>
+
+<script language=JavaScript>
+for (var i=0; i<=1; ++i) {
+  document.write(
+    "<div id=\"slide_div_"+i+"\" "
+    + "style=\"position: absolute;\"><img id=slide_"+i+" border=0 "
+    + "usemap=\"#linksmap\" "
+    + "src=\""+slide_set[0]+"\" "
+    + "style=\"z-index:0; position: relative\" "
+    + "onmousedown=\"drag_start(event)\"></div>\n"
+  );
+}
+</script>
+
+<map name="linksmap" id="linksmap_map">
+</map>
+
+<div id="text_div" style="z-index: 1;">
+
+<div style="position: absolute; top: 0px; left: 0px; text-align: left; max-width: 66%"><form name=viewform><span id="navigation_text" style="background-color:yellow;">
+<script language=JavaScript>
+  document.write(navigation_text);
+</script>
+</span>
+<span id="title_text" style="background-color:yellow;">
+<script language=JavaScript>
+  document.write("<b>"+handout_name+":</b>");
+</script>
+<select style="background-color: yellow;" name=viewselect onChange="viewselected();"></select>
+</span></form>
+</div>
+
+<div id="menu_div" style="display: none; font-size: 66%; position: absolute; bottom: 0px; left: 0px; text-align: left; "></div>
+
+<div id="help_div" style="position: absolute; top: 0px; right: 0px; text-align: right; max-width: 33%; font-size: small;"></div>
+
+<div id="BottomRight" style="position: absolute; bottom: 0px; right: 0px; text-align: right; max-width: 50%;">
+<span id="HandoutBrowser_banner" style="background-color:yellow;">Powered by <a
+href="http://katlas.math.toronto.edu/drorbn/index.php?title=HandoutBrowser.js">HandoutBrowser.js</a></span>
+<span id="info_span" style="background-color:yellow;"></span>
+</div>
+
+</div>
+
+<div id="rectangle_div" style="position: absolute; top: 0px; left: 0px; width: 150; height: 150; border-width: 3; border-style: solid; border-color: red; color: red; display: none">
+  Click, drag and release to mark capture rectangle
+</div>
+
+<div id="refresh_div" style="position: absolute; top: 50%; width: 100%; text-align: center; z-index: -1;"><a href="javascript:document.location.reload();">REFRESH</a></div>
+
+<script src="HandoutBrowser.js"></script>
+
+</body></html>
+
+
