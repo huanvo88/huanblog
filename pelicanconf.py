@@ -100,3 +100,6 @@ DISPLAY_PAGES_ON_MENU = True
 #publishconf.py
 SITEURL = 'https://huanvo88.github.io/huanblog'
 RELATIVE_URLS = True
+
+#Disqus
+DISQUS_SITENAME = "Huan's Blog"
