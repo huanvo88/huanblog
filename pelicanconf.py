@@ -107,3 +107,5 @@ DISQUS_SITENAME = "huan-2"
 DISQUS_NO_ID = True
 
 DISQUS_DISPLAY_COUNTS = True
+
+DISQUSURL = 'https://huanvo88.github.io'
