@@ -102,4 +102,8 @@ SITEURL = 'https://huanvo88.github.io/huanblog'
 RELATIVE_URLS = True
 
 #Disqus
-DISQUS_SITENAME = "Huan's Blog"
+DISQUS_SITENAME = "huan-2"
+
+DISQUS_NO_ID = True
+
+DISQUS_DISPLAY_COUNTS = True
