@@ -59,6 +59,8 @@ BOOTSTRAP_THEME = 'flatly'
 #BOOTSTRAP_THEME = 'litera'
 #BOOTSTRAP_THEME = 'sandstone'
 #BOOTSTRAP_THEME = 'cosmo'
+#BOOTSTRAP_THEME = 'simplex'
+#BOOTSTRAP_THEME = 'spacelab'
 
 #Navbar
 #BOOTSTRAP_NAVBAR_INVERSE = True
